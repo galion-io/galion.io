@@ -1,0 +1,90 @@
+#hero {
+  height: 100vh;
+  background: #223265;
+  position: relative;
+  color: white;
+}
+
+/* header */
+#hero header {
+  height: 100px;
+  background: rgba(0,0,0,0.1);
+  line-height: 100px;
+}
+
+#hero .brand {
+  float: left;
+  background: rgba(0,0,0,0.1);
+  padding: 0 2em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#hero nav {
+  float: right;
+  padding: 0 4em;
+}
+
+#hero nav a {
+  font-size: 1.2em;
+  padding: 0.75em 2em;
+  margin: 0 .3em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+/* big text area */
+#hero .bigtext {
+  background: rgba(0,0,0,0.1);
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  width: 800px;
+  margin-left: -600px;
+}
+
+#hero .bigtext .title {
+  font-size: 3.5em;
+  font-family: comfortaa;
+  font-weight: 400;
+}
+
+#hero .bigtext .subtitle {
+  font-size: 3em;
+  padding: 1em 0;
+}
+
+#hero .bigtext .subscribe-mailbox {
+  font-size: 2em;
+}
+
+/* animation elements */
+@keyframes bounce {
+  from { margin-top: 10px; }
+  50%  { margin-top: 0em; }
+  to   { margin-top: 10px; }
+}
+#hero .cryptoball {
+  background: #1b294e;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: absolute;
+  transition: all .1s;
+  animation: bounce 3s ease-in-out infinite;
+  opacity: 0;
+  background-size: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#hero-phone {
+  background: rgba(0,0,0,0.3);
+  width: 325px;
+  height: 650px;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  margin-left: 250px;
+}

@@ -1,0 +1,71 @@
+#team {
+  height: 100vh;
+  background: rgba(0,0,0,0.1);
+  padding: 4em 0 5em 5em;
+}
+
+#team #portraits {
+  background: rgba(0,0,0,0.1);
+  float: left;
+  height: 100%;
+  width: 50%;
+  padding: 2em;
+  text-align: center;
+}
+
+#team #portraits h1 {
+  font-size: 2em;
+}
+
+#team #portraits p {
+  padding: 2em;
+}
+
+#team #portraits .portrait {
+  position: relative;
+  display: inline-block;
+  margin: 1em;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 2em rgba(0,0,0,0.3);
+  cursor: pointer;
+  background-size: cover;
+  background-position: top center;
+}
+
+#team #portraits .portrait .text {
+  background: #fff;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#team #portraits .portrait p {
+  display: none;
+}
+
+#team #bigface {
+  float: right;
+  width: 50%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  position: relative;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-size: cover;
+  background-position: top center;
+}
+
+#team #bigface-text {
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+  background: #fff;
+  border-radius: 15px;
+  margin: 0 2em -2em;
+  box-shadow: 0 0 2em rgba(0,0,0,0.3);
+}

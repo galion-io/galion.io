@@ -1,0 +1,23 @@
+#vision {
+  padding: 0 5em 13em 5em;
+}
+
+#vision .title {
+  text-align: center;
+  padding: 1em;
+  padding-bottom: 6em;
+  font-size: 3em;
+}
+
+#vision section {
+  float: left;
+  width: calc(33% - 2em);
+  padding: 2em;
+  background: rgba(0,0,0,0.1);
+  margin: 0 1em;
+  text-align: center;
+}
+
+#vision section h3 {
+  padding: 1em 0;
+}

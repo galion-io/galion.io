@@ -1,0 +1,27 @@
+#roadmap {
+  height: 90vh;
+  background: rgba(0,0,0,0.05);
+}
+
+#roadmap .lefttext {
+  width: 600px;
+  float: left;
+}
+
+#roadmap .timeline {
+  width: calc(100% - 600px);
+  height: 100%;
+  position: relative;
+  padding-bottom: 100px;
+  float: right;
+  background: rgba(0,0,0,0.1);
+}
+
+#roadmap .timeline .nav {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.1);
+}

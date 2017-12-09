@@ -1,0 +1,44 @@
+#tokensale {
+  position: relative;
+  height: 700px;
+}
+
+#tokensale .token, .piechart {
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  background: rgba(0,0,0,0.2);
+  position: absolute;
+  margin-left: 5em;
+  text-align: center;
+  transition: opacity .1s;
+}
+
+#tokensale .token {
+  left: 100%;
+  top: 0;
+  opacity: 1;
+}
+
+#tokensale .piechart {
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#tokensale .text {
+  position: absolute;
+  width: calc(100% - 10em - 400px);
+  right: 5em;
+  padding-left: 2em;
+  opacity: 0;
+  transition: opacity .1s;
+}
+
+#tokensale .text .title {
+  font-size: 3em;
+}
+
+#tokensale .text p {
+  font-size: 2em;
+}

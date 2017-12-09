@@ -1,0 +1,41 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn-border {
+  border: 2px solid;
+  border-radius: 1.5em;
+}
+
+.btn-color {
+  border-radius: 1.5em;
+  background: linear-gradient(130deg, #9216c1, #E9649B);
+  weight: 500;
+}
+
+.subscribe-mailbox {
+  position: relative;
+  display: inline-block;
+}
+
+.subscribe-mailbox input[type="text"]{
+  padding: 1em 10em 1em 1em;
+  width: 35em;
+  height: 3em;
+  background: white;
+  border: none;
+  border-radius: 1.5em;
+}
+
+.subscribe-mailbox input[type="submit"]{
+  position: absolute;
+  top: 0.25em;
+  right: 0.25em;
+  background: #ccc;
+  border: none;
+  border-radius: 1.5em;
+  height: 2.5em;
+  padding: 0 2em;
+}
