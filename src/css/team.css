@@ -1,47 +1,66 @@
 #team {
-  height: 100vh;
-  background: rgba(0,0,0,0.1);
-  padding: 4em 0 5em 5em;
+  padding-right: 0;
 }
 
 #team #portraits {
-  background: rgba(0,0,0,0.1);
   float: left;
   height: 100%;
-  width: 50%;
-  padding: 2em;
+  width: calc(50% - 300px);
+  padding: 2em 3em 2em 0;
   text-align: center;
 }
 
-#team #portraits h1 {
-  font-size: 2em;
-}
-
 #team #portraits p {
-  padding: 2em;
+  padding: 2em 0;
 }
 
 #team #portraits .portrait {
-  position: relative;
-  display: inline-block;
-  margin: 1em;
-  width: 250px;
-  height: 250px;
-  position: relative;
-  border-radius: 15px;
-  box-shadow: 0 0 2em rgba(0,0,0,0.3);
+  padding: .5em 0 .5em 1.5em;
   cursor: pointer;
-  background-size: cover;
-  background-position: top center;
+}
+
+#team #portraits .portraits-wrapper {
+  padding: 1em 0;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	box-shadow: 0 3px 14px 0 rgba(0,0,0,0.1);
+}
+
+#team #portraits .portrait .image {
+  float: left;
+  background-color: #9F9F9F;
+  width: 52px;
+  height: 52px;
+  border-radius: 26px;
+  background-size: 100% 100%;
 }
 
 #team #portraits .portrait .text {
-  background: #fff;
-  padding: 1em;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  border-radius: 15px;
+  text-transform: uppercase;
+  float: left;
+  line-height: 22px;
+  margin-top: 4px;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 1em;
+  border-right: 4px solid transparent;
+  color: #9F9F9F;
+  width: calc(100% - 52px);
+}
+
+#team #portraits .portrait.active {
+  border-right: 4px solid #394A8A;
+}
+#team #portraits .portrait.active .text {
+  color: #394A8A;
+}
+
+#team #portraits .portrait .text .name {
+  font-weight: 500;
+}
+
+#team #portraits .portrait .text .job {
+  font-size: 16px;
 }
 
 #team #portraits .portrait p {
@@ -49,23 +68,63 @@
 }
 
 #team #bigface {
-  float: right;
-  width: 50%;
-  height: 100%;
+  float: left;
+  width: 600px;
+  height: 700px;
   background: rgba(0,0,0,0.2);
-  position: relative;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 15px;
   background-size: cover;
   background-position: top center;
 }
 
 #team #bigface-text {
-  position: absolute;
-  bottom: 0;
-  padding: 1em;
-  background: #fff;
-  border-radius: 15px;
-  margin: 0 2em -2em;
-  box-shadow: 0 0 2em rgba(0,0,0,0.3);
+  float: left;
+  width: calc(50% - 300px);
+  height: 660px;
+  margin-top: 20px;
+  background: #223361;
+  color: white;
+  padding: 7em 5em 2em 3em;
+}
+
+#team #bigface-text .name {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#team #bigface-text .job {
+  text-transform: uppercase;
+  font-size: 20px;
+  opacity: .7;
+}
+
+#team #bigface-text p {
+  padding: 2em 0;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+  #team {
+    padding: 2em;
+  }
+
+  #team #portraits {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+
+  #team #bigface {
+    width: 300px;
+    height: 350px;
+    max-width: 100%;
+  }
+
+  #team #bigface-text {
+    width: 100%;
+    padding: 2em;
+    height: auto;
+    border-radius: 15px;
+  }
 }

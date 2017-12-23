@@ -1,23 +1,68 @@
 #vision {
-  padding: 0 5em 13em 5em;
+  padding-top: 5em;
 }
 
 #vision .title {
   text-align: center;
-  padding: 1em;
-  padding-bottom: 6em;
-  font-size: 3em;
+  padding: 2em 0;
 }
 
 #vision section {
   float: left;
   width: calc(33% - 2em);
+  height: 315px;
   padding: 2em;
-  background: rgba(0,0,0,0.1);
+  background: #fff;
   margin: 0 1em;
+  text-align: center;
+	box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
+  border-radius: 8px;
   text-align: center;
 }
 
 #vision section h3 {
   padding: 1em 0;
+  color: #4F2D72;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#vision section p {
+  color: #9FA4B8;
+  font-size: 15px;
+}
+
+#vision .vision {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 5px solid white;
+  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.1);
+  border-radius: 50px;
+}
+
+#vision .vision.vision1 {
+  background: linear-gradient(129.86deg, #6D0096 0%, #E9649B 100%);
+}
+#vision .vision.vision2 {
+  background: linear-gradient(108.88deg, #634382 0%, #884C84 100%);
+}
+#vision .vision.vision3 {
+  background: linear-gradient(129.86deg, #C531A3 0%, #E17C91 100%);
+}
+
+@media screen and (max-width: 1000px) {
+  #vision {
+    padding-top: 1em;
+  }
+
+  #vision .title {
+    padding: 1em 0;
+  }
+
+  #vision section {
+    padding: 1em;
+    width: 100%;
+    margin: 0 0 1em;
+  }
 }

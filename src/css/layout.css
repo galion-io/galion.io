@@ -1,17 +1,25 @@
 html, body {
 	margin: 0; padding: 0;
   font-family: avenir, sans-serif;
+  width: 100%;
   background: #f9faff;
 }
 
-#main-scroll-container {
-  height: 1000vh;
-  width: 100%;
-  overflow-x: hidden;
+/*html {
+  background: #223265;
+  text-align: center;
 }
+
+body {
+  display: inline-block;
+  max-width: 1400px;
+  text-align: left;
+}*/
 
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+  outline: none;
+  user-select: none;
 }

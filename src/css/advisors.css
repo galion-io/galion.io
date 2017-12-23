@@ -1,0 +1,52 @@
+#advisors {
+  text-align: center;
+}
+
+#advisors h1 {
+  padding: 2em 0;
+}
+
+#advisors .advisor {
+  display: inline-block;
+  margin: 1em;
+  width: 190px;
+  height: 280px;
+}
+
+#advisors .advisor .image {
+  height: 110px;
+  width: 110px;
+  display: inline-block;
+  border-radius: 55px;
+  background-color: #9F9F9F;
+}
+
+#advisors .advisor .name {
+  text-transform: uppercase;
+  color: #373737;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 20px 0 10px;
+}
+
+#advisors .advisor .job {
+  color: #818181;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+#advisors .advisor a {
+  background-color: #9F9F9F;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  margin: .5em;
+}
+
+@media screen and (max-width: 1000px) {
+  #advisors .section-title {
+    padding: .5em 0;
+  }
+}

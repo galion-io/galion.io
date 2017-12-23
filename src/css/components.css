@@ -7,12 +7,14 @@
 .btn-border {
   border: 2px solid;
   border-radius: 1.5em;
+  text-decoration: none;
 }
 
 .btn-color {
   border-radius: 1.5em;
   background: linear-gradient(130deg, #9216c1, #E9649B);
   weight: 500;
+  text-decoration: none;
 }
 
 .subscribe-mailbox {
@@ -20,22 +22,75 @@
   display: inline-block;
 }
 
+.subscribe-mailbox input[type="text"]::placeholder {
+  color: #c5c5c5;
+}
+
 .subscribe-mailbox input[type="text"]{
-  padding: 1em 10em 1em 1em;
-  width: 35em;
-  height: 3em;
+  padding: 0 160px 0 20px;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
+  width: 460px;
+  height: 60px;
   background: white;
   border: none;
-  border-radius: 1.5em;
+  border-radius: 30px;
+  font-family: avenir;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .subscribe-mailbox input[type="submit"]{
   position: absolute;
-  top: 0.25em;
-  right: 0.25em;
-  background: #ccc;
+  top: 6px;
+  right: 6px;
+  background: linear-gradient(130deg, #9216c1, #E9649B);
   border: none;
-  border-radius: 1.5em;
-  height: 2.5em;
-  padding: 0 2em;
+  border-radius: 24px;
+  height: 48px;
+  width: 150px;
+  color: white;
+  font-family: avenir;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.mainsection {
+  padding: 0 10em 10em;
+}
+
+.section-title {
+  font-size: 34px;
+  font-family: comfortaa;
+  font-weight: bold;
+  color: #373737;
+}
+
+.section-text {
+  font-size: 18px;
+  color: #818181;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainsection {
+    padding: 0 2em 1em;
+  }
+
+  .subscribe-mailbox input[type="text"] {
+    height: 40px;
+    font-size: 12px;
+    width: 300px;
+    padding: 0 86px 0 15px;
+  }
+  .subscribe-mailbox input[type="submit"] {
+    top: 3px;
+    right: 3px;
+    height: 34px;
+    font-size: 11px;
+    width: 80px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
 }

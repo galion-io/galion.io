@@ -1,27 +1,185 @@
 #roadmap {
-  height: 90vh;
-  background: rgba(0,0,0,0.05);
+  padding-bottom: 0;
+  padding-right: 0;
 }
 
 #roadmap .lefttext {
-  width: 600px;
+  width: 500px;
   float: left;
+  padding: 5em 3em 0 0;
+}
+
+#roadmap .lefttext h1 {
+  padding-bottom: 1em;
+}
+
+#roadmap .lefttext .btn {
+  border-radius: 60px;
+  background-color: #FFFFFF;
+  padding: .5em 2em;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+#roadmap .lefttext .btn img {
+  height: 24px;
+  width: 24px;
+  vertical-align: -6px;
+  margin-right: 6px;
 }
 
 #roadmap .timeline {
-  width: calc(100% - 600px);
+  width: calc(100% - 500px);
   height: 100%;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
   float: right;
-  background: rgba(0,0,0,0.1);
+  background: #223361;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#roadmap .timeline .text {
+  color: white;
+  opacity: .8;
+  padding: 4em;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+#roadmap .timeline .blocks {
+  overflow-y: hidden;
+  white-space: nowrap;
+  overflow-x: auto;
+  text-align: center;
+  padding-bottom: 3em;
+  padding-right: 3em;
+}
+
+#roadmap .timeline .block {
+	border-radius: 8px;
+	background-color: #FFFFFF;
+	box-shadow: 0 24px 40px 0 rgba(0,0,0,0.15);
+  padding: 2em;
+  color: #8794C6;
+  margin: 0 3em;
+  white-space: normal;
+  display: inline-block;
+  width: 285px;
+}
+
+#roadmap .timeline .block h3 {
+	color: #4F2D72;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+  line-height: 21px;
+}
+
+#roadmap .timeline .block p {
+	text-align: left;
+}
+
+#roadmap .timeline .block .icon {
+  height: 46px;
+  width: 46px;
+  background: linear-gradient(134.72deg, #EF14C5 0%, #FFC160 100%);
+  border-radius: 6px;
+  float: left;
+  margin-right: 1em;
 }
 
 #roadmap .timeline .nav {
-  height: 100px;
+  height: 110px;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#roadmap .timeline .nav .wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+#roadmap .timeline .nav .wrapper .line {
+  position: absolute;
+  top: 37px;
+  left: 50px;
+  height: 1px;
+  width: calc(100% - 100px);
+  background: #D8D8D8;
+}
+
+#roadmap .timeline .nav .wrapper .item {
+  display: inline-block;
+  padding: 1em 2em;
+  color: #D8D8D8;
+  font-family: comfortaa;
+  cursor: pointer;
+}
+#roadmap .timeline .nav .wrapper .item:not(.active) {
+  vertical-align: 2px;
+}
+#roadmap .timeline .nav .wrapper .item .icon-active {
+	height: 40px;
+	width: 40px;
+	background: linear-gradient(270deg, #20D2DC 0%, #70AFF9 100%);
+  border-radius: 20px;
+}
+#roadmap .timeline .nav .wrapper .item .icon-inactive {
+	height: 20px;
+	width: 20px;
+  border-radius: 10px;
+  margin: 10px;
+	background-color: #D8D8D8;
+}
+#roadmap .timeline .nav .wrapper .item .item-text {
+  font-size: 16px;
+  padding-top: 15px;
+  color: #D8D8D8;
+}
+#roadmap .timeline .nav .wrapper .item.active .item-text {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  #roadmap {
+    padding: 0;
+  }
+
+  #roadmap .lefttext {
+    width: 100%;
+    padding: 2em;
+  }
+
+  #roadmap .timeline {
+    width: 100%;
+    border-radius: 0;
+    padding-top: 110px;
+    padding-bottom: 0;
+  }
+
+  #roadmap .timeline .text {
+    padding: 1em 2em;
+  }
+
+  #roadmap .timeline .blocks {
+    white-space: normal;
+    padding: 0;
+  }
+
+  #roadmap .timeline .block {
+    margin: 0 0 1em;
+  }
+
+  #roadmap .timeline .nav {
+    bottom: default;
+    top: 0;
+  }
+
+  #roadmap .timeline .nav .wrapper .item {
+    padding: 1em;
+  }
 }

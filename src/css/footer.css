@@ -1,0 +1,49 @@
+#footer {
+  background: #223361;
+  color: white;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#footer table {
+  width: 100%;
+}
+
+#footer th {
+  line-height: 72px;
+}
+
+#footer th img {
+  vertical-align: bottom;
+  margin-right: 1em;
+}
+
+#footer td, #footer th {
+  padding: 0 2em;
+  text-align: left;
+}
+
+#footer td {
+  padding: 1em 2em;
+}
+
+#footer a {
+  display: block;
+  color: #969DB7;
+  cursor: pointer;
+  margin: 1.5em 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #footer {
+    padding: 1em;
+  }
+
+  #footer th, #footer td {
+    padding: .5em;
+  }
+
+  #footer tr td:nth-child(2), #footer tr th:nth-child(2) {
+    display: none;
+  }
+}

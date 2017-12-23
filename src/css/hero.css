@@ -8,16 +8,18 @@
 /* header */
 #hero header {
   height: 100px;
-  background: rgba(0,0,0,0.1);
   line-height: 100px;
 }
 
 #hero .brand {
   float: left;
-  background: rgba(0,0,0,0.1);
-  padding: 0 2em;
+  padding: 0 2em 0 100px;
   font-size: 2em;
   font-weight: bold;
+  background-image: url('img/logo.png');
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
 }
 
 #hero nav {
@@ -27,7 +29,7 @@
 
 #hero nav a {
   font-size: 1.2em;
-  padding: 0.75em 2em;
+  padding: 0.75em 1.5em;
   margin: 0 .3em;
   font-weight: 500;
   cursor: pointer;
@@ -36,23 +38,25 @@
 
 /* big text area */
 #hero .bigtext {
-  background: rgba(0,0,0,0.1);
   position: absolute;
-  top: 150px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 50%;
-  width: 800px;
+  width: 700px;
   margin-left: -600px;
 }
 
 #hero .bigtext .title {
-  font-size: 3.5em;
+  font-size: 52px;
   font-family: comfortaa;
   font-weight: 400;
+  line-height: 70px;
 }
 
 #hero .bigtext .subtitle {
-  font-size: 3em;
-  padding: 1em 0;
+  font-size: 24px;
+  padding: 60px 0;
+  line-height: 29px;
 }
 
 #hero .bigtext .subscribe-mailbox {
@@ -71,7 +75,7 @@
   width: 100px;
   border-radius: 50px;
   position: absolute;
-  transition: all .1s;
+  transition: opacity 1s, transform .15s;
   animation: bounce 3s ease-in-out infinite;
   opacity: 0;
   background-size: 50%;
@@ -80,11 +84,67 @@
 }
 
 #hero-phone {
-  background: rgba(0,0,0,0.3);
+  background: url('img/phone.png');
+  background-size: contain;
   width: 325px;
   height: 650px;
   position: absolute;
   bottom: -100%;
   left: 50%;
   margin-left: 250px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #hero {
+    height: auto;
+  }
+
+  #hero .bigtext .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  #hero #hero-phone {
+    display: none;
+  }
+
+  #hero .bigtext .subtitle {
+    font-size: 20px;
+    padding: 25px 0;
+    line-height: 25px;
+  }
+
+  #hero header {
+    height: auto;
+    text-align: center;
+  }
+
+  #hero .brand {
+    float: none;
+    width: 270px;
+    display: inline-block;
+  }
+
+  #hero nav {
+    float: none;
+    padding: 0;
+    display: block;
+    line-height: 50px;
+  }
+
+  #hero nav a {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    white-space: nowrap;
+  }
+
+
+  #hero .bigtext {
+    position: initial;
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+    padding: 2em;
+  }
 }

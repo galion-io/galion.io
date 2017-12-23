@@ -9,85 +9,22 @@
     x = w.innerWidth || e.clientWidth || g.clientWidth,
     y = w.innerHeight || e.clientHeight || g.clientHeight;
 
-  var SCROLL_SPEED = 1000;
-  window.goto = {
-    hero: function() {
-      $('html, body').animate({
-        scrollTop: $('#trigger-hero-top').offset().top
-      }, SCROLL_SPEED);
-    },
-    vision: function() {
-      $('html, body').animate({
-        scrollTop: $('#trigger-vision-top').offset().top + 100
-      }, SCROLL_SPEED);
-    },
-    tokensale: function() {
-      $('html, body').animate({
-        scrollTop: $('#trigger-tokensale-top').offset().top + 700
-      }, SCROLL_SPEED);
-    },
-    team: function() {
-      $('html, body').animate({
-        scrollTop: $('#team').offset().top
-      }, SCROLL_SPEED);
-    }
-  };
+  if (x < 1000) {
+    return;
+  }
 
   var controller = new ScrollMagic.Controller();
 
   var $cryptoballs = $('#hero .cryptoball');
-  $('#hero').on('mousemove', function(ev) {
-    var mouseX = ev.clientX;
-    var mouseY = ev.clientY;
-    $cryptoballs.each(function() {
-      var $ball = $(this);
-      var ballPosition = $ball.position();
-      var dx = ballPosition.left + $ball.width() / 2 - mouseX;
-      var dy = ballPosition.top + $ball.height() / 2 - mouseY;
-      // normalize dx/dy in terms of ball size
-      dx = dx / $ball.width();
-      dy = dy / $ball.height();
-      var dxy = Math.sqrt(dx * dx + dy * dy);
-
-      if (dxy < 0.7) {
-        $ball.attr('tx', dx * $ball.width());
-        $ball.attr('ty', dy * $ball.height());
-        $ball.attr('moving', 'yes');
-      }
-    });
-  });
-  // setup back-to-normal position
-  $cryptoballs.each(function() {
-    var $ball = $(this);
-    setInterval(function() {
-      if ($ball.attr('moving')) {
-        var speed = 0.9;
-        var tx = Number($ball.attr('tx')) * speed;
-        var ty = Number($ball.attr('ty')) * speed;
-        $ball.css('transform', 'translate3d(' + tx + 'px, ' + ty + 'px, 0)');
-        if (Math.abs(tx) < 1 && Math.abs(ty) < 1) {
-          $ball.attr('tx', '');
-          $ball.attr('ty', '');
-          $ball.attr('moving', '');
-        } else {
-          $ball.attr('tx', tx);
-          $ball.attr('ty', ty);
-        }
-      }
-    }, 1000 / 60);
-  });
 
   new ScrollMagic.Scene({
     triggerElement: '#trigger-hero-top',
-    duration: 3 * y,
+    duration: 1 * y,
     triggerHook: 0
   })
     .setPin('#hero')
-    .addIndicators({ name: 'hero' })
     .addTo(controller)
     .on('progress', function(ev) {
-      $('#hero-anim-percent').text(Math.round(ev.progress * 100) + ' %');
-
       // move cryptoballs
       var ballx = [5, 15, 25, 20, 35, 45, 55, 65, 70, 75, 85, 95];
       var bally = [20, 70, 50, 85, 30, 30, 45, 65, 20, 50, 25, 75];
@@ -121,21 +58,6 @@
       } else {
         $phone.css('bottom', -1 * $phone.height());
       }
-    });
-
-  new ScrollMagic.Scene({
-    triggerElement: '#trigger-vision-top',
-    duration: 0.25 * y,
-    triggerHook: 0.5
-  })
-    .setPin('#vision')
-    .addIndicators({ name: 'vision' })
-    .addTo(controller)
-    .on('progress', function(ev) {
-      $('#vision-anim-percent').text(Math.round(ev.progress * 100) + ' %');
-      $('#vision .title').each(function() {
-        $(this).css('padding-bottom', ((1 - ev.progress) * 5 + 1) + 'em');
-      });
     });
 
   var $token = $('#tokensale .token');

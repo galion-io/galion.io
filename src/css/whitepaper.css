@@ -1,0 +1,66 @@
+#whitepaper {
+  background: #223361;
+  padding-top: 10em;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+#whitepaper .section-title {
+  color: white;
+}
+
+#whitepaper .section-text {
+  color: white;
+  opacity: .8;
+  padding: 2em 0;
+}
+
+#whitepaper .btn-color {
+  padding: 0.75em 1.5em;
+  color: white;
+}
+
+#whitepaper .image {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: 100% 100%;
+  position: relative;
+  display: inline-block;
+  background-color: #333;
+  background-image: url('img/wp1.png');
+  margin: 3em 0 -5em;
+  border-radius: 10px;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
+  max-width: 100%;
+}
+
+#whitepaper .image .nav-left, #whitepaper .image .nav-right {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
+  top: 50%;
+  margin-top: -30px;
+  background-image: url('img/wp-arrow-left.png');
+  background-size: 30px 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#whitepaper .image .nav-left {
+  left: -30px;
+}
+
+#whitepaper .image .nav-right {
+  right: -30px;
+  transform: rotateZ(180deg);
+}
+
+@media screen and (max-width: 1000px) {
+  #whitepaper {
+    padding-top: 2em;
+  }
+}

@@ -1,0 +1,13 @@
+#subscribe-mid {
+  text-align: center;
+}
+
+#subscribe-mid p {
+  padding: 1.5em 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #subscribe-mid {
+    padding-top: 2em;
+  }
+}

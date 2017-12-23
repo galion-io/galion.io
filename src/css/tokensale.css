@@ -1,6 +1,6 @@
 #tokensale {
   position: relative;
-  height: 700px;
+  overflow: hidden;
 }
 
 #tokensale .token, .piechart {
@@ -11,34 +11,59 @@
   position: absolute;
   margin-left: 5em;
   text-align: center;
-  transition: opacity .1s;
+  transition: opacity .5s;
 }
 
 #tokensale .token {
   left: 100%;
   top: 0;
   opacity: 1;
+  background-image: url('img/token.png');
+  background-size: 100% 100%;
 }
 
 #tokensale .piechart {
   left: 0;
   top: 0;
   opacity: 0;
+  background-image: url('img/piechart.png');
+  background-size: 100% 100%;
 }
 
 #tokensale .text {
-  position: absolute;
-  width: calc(100% - 10em - 400px);
-  right: 5em;
-  padding-left: 2em;
+  float: right;
+  width: calc(100% - 400px);
+  height: 400px;
+  padding-left: 3em;
   opacity: 0;
   transition: opacity .1s;
 }
 
 #tokensale .text .title {
-  font-size: 3em;
+  padding: 30px 0;
 }
 
-#tokensale .text p {
-  font-size: 2em;
+
+@media screen and (max-width: 1000px) {
+  #tokensale {
+    padding: 0;
+    text-align: center;
+  }
+
+  #tokensale .piechart {
+    opacity: 1;
+    margin: 2em;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    position: initial;
+  }
+
+  #tokensale .text {
+    opacity: 1;
+    position: initial;
+    width: 100%;
+    float: none;
+    padding: 0 2em;
+  }
 }

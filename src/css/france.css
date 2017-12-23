@@ -1,0 +1,43 @@
+#france {
+  position: relative;
+}
+
+#france .france-logo {
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  background: url('img/france.png');
+  background-size: 100% 100%;
+  float: right;
+  transition: opacity .5s;
+}
+
+#france .text {
+  float: left;
+  width: calc(100% - 400px);
+  padding-right: 3em;
+}
+
+#france .text .title {
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #france {
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  #france .france-logo {
+    float: none;
+    height: 200px;
+    width: 200px;
+  }
+
+  #france .text {
+    float: none;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+}

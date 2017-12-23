@@ -112,7 +112,7 @@ gulp.task('default', ['serve'], function() {
 });
 
 gulp.task('deploy', ['build'], function(cb) {
-  var cmd = 'scp -r dist/* galionprod:/data/www/galion-webportal/';
+  var cmd = 'scp -r dist/* galionprod:/data/www/galion-landing/';
   exec(cmd, function(err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
