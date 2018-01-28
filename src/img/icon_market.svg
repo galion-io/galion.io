@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-62.2844828%" y1="-36.2100291%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#6D0096" offset="0%"></stop>
+            <stop stop-color="#E9649B" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="48" cy="48" r="48"></circle>
+        <filter x="-28.2%" y="-26.1%" width="156.5%" height="156.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="3.5999999" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-250.000000, -1069.000000)">
+            <g id="Vision" transform="translate(137.000000, 928.000000)">
+                <g id="Group-6-Copy-2" transform="translate(0.000000, 105.000000)">
+                    <g id="Group-10" transform="translate(130.000000, 51.000000)">
+                        <g id="Oval-5">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use stroke="#FFFFFF" stroke-width="7.19999981" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="icons8-long_position" transform="translate(12.000000, 29.000000)">
+                            <path d="M49,18 C48.449219,18 48,18.449219 48,19 C48,19.550781 48.449219,20 49,20 C49.550781,20 50,19.550781 50,19 C50,18.449219 49.550781,18 49,18 Z" id="Path-Copy-4" fill="#FFFFFF"></path>
+                            <path d="M45,18 C44.449219,18 44,18.449219 44,19 C44,19.550781 44.449219,20 45,20 C45.550781,20 46,19.550781 46,19 C46,18.449219 45.550781,18 45,18 Z" id="Path-Copy-10" fill="#FFFFFF"></path>
+                            <path d="M36,18 C35.449219,18 35,18.449219 35,19 C35,19.550781 35.449219,20 36,20 C36.550781,20 37,19.550781 37,19 C37,18.449219 36.550781,18 36,18 Z" id="Path-Copy" fill="#FFFFFF"></path>
+                            <path d="M9,18 C8.449219,18 8,18.449219 8,19 C8,19.550781 8.449219,20 9,20 C9.550781,20 10,19.550781 10,19 C10,18.449219 9.550781,18 9,18 Z" id="Path-Copy-12" fill="#FFFFFF"></path>
+                            <path d="M61,18 C60.449219,18 60,18.449219 60,19 C60,19.550781 60.449219,20 61,20 C61.550781,20 62,19.550781 62,19 C62,18.449219 61.550781,18 61,18 Z" id="Path-Copy-5" fill="#FFFFFF"></path>
+                            <path d="M1,18 C0.449219,18 0,18.449219 0,19 C0,19.550781 0.449219,20 1,20 C1.550781,20 2,19.550781 2,19 C2,18.449219 1.550781,18 1,18 Z" id="Path-Copy-13" fill="#FFFFFF"></path>
+                            <path d="M53,18 C52.449219,18 52,18.449219 52,19 C52,19.550781 52.449219,20 53,20 C53.550781,20 54,19.550781 54,19 C54,18.449219 53.550781,18 53,18 Z" id="Path-Copy-6" fill="#FFFFFF"></path>
+                            <path d="M13,18 C12.449219,18 12,18.449219 12,19 C12,19.550781 12.449219,20 13,20 C13.550781,20 14,19.550781 14,19 C14,18.449219 13.550781,18 13,18 Z" id="Path-Copy-14" fill="#FFFFFF"></path>
+                            <path d="M65,18 C64.449219,18 64,18.449219 64,19 C64,19.550781 64.449219,20 65,20 C65.550781,20 66,19.550781 66,19 C66,18.449219 65.550781,18 65,18 Z" id="Path-Copy-7" fill="#FFFFFF"></path>
+                            <path d="M32,18 C31.449219,18 31,18.449219 31,19 C31,19.550781 31.449219,20 32,20 C32.550781,20 33,19.550781 33,19 C33,18.449219 32.550781,18 32,18 Z" id="Path" fill="#FFFFFF"></path>
+                            <path d="M5,18 C4.449219,18 4,18.449219 4,19 C4,19.550781 4.449219,20 5,20 C5.550781,20 6,19.550781 6,19 C6,18.449219 5.550781,18 5,18 Z" id="Path-Copy-15" fill="#FFFFFF"></path>
+                            <path d="M57,18 C56.449219,18 56,18.449219 56,19 C56,19.550781 56.449219,20 57,20 C57.550781,20 58,19.550781 58,19 C58,18.449219 57.550781,18 57,18 Z" id="Path-Copy-8" fill="#FFFFFF"></path>
+                            <path d="M17,18 C16.449219,18 16,18.449219 16,19 C16,19.550781 16.449219,20 17,20 C17.550781,20 18,19.550781 18,19 C18,18.449219 17.550781,18 17,18 Z" id="Path-Copy-16" fill="#FFFFFF"></path>
+                            <path d="M69,18 C68.449219,18 68,18.449219 68,19 C68,19.550781 68.449219,20 69,20 C69.550781,20 70,19.550781 70,19 C70,18.449219 69.550781,18 69,18 Z" id="Path-Copy-9" fill="#FFFFFF"></path>
+                            <path d="M13,29 L23.5,15" id="Line-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M56,4 L59,0" id="Line-3-Copy-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" transform="translate(57.500000, 2.000000) scale(-1, 1) translate(-57.500000, -2.000000) "></path>
+                            <path d="M23,29 L33.5,15" id="Line-3-Copy" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" transform="translate(28.500000, 22.000000) scale(-1, 1) translate(-28.500000, -22.000000) "></path>
+                            <path d="M34,29 L56,0" id="Line-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
