@@ -4,18 +4,19 @@
 
 #france .france-logo {
   display: inline-block;
-  height: 400px;
-  width: 400px;
+  height: 360px;
+  width: 360px;
   background: url('img/france.png');
   background-size: 100% 100%;
-  float: right;
+  float: left;
   transition: opacity .5s;
+  margin-left: 20px;
 }
 
 #france .text {
-  float: left;
+  float: right;
   width: calc(100% - 400px);
-  padding-right: 3em;
+  padding-left: 3em;
 }
 
 #france .text .title {

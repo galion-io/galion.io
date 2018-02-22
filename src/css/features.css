@@ -1,5 +1,7 @@
 #features {
   padding-left: 0;
+  background: url(img/circle.png);
+  background-position: -1100px 0;
 }
 
 #features .left {

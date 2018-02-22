@@ -5,6 +5,10 @@
   padding-bottom: 5em;
 }
 
+#footer .colored {
+  color: #969DB7;
+}
+
 #footer table {
   width: 100%;
 }
@@ -13,9 +17,15 @@
   line-height: 72px;
 }
 
+#footer .brand {
+  font-size: 24px;
+}
+
 #footer th img {
-  vertical-align: bottom;
+  vertical-align: -12px;
   margin-right: 1em;
+  height: 42px;
+  width: 39px;
 }
 
 #footer td, #footer th {

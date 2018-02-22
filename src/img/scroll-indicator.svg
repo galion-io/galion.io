@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="40px" viewBox="0 0 30 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Mouse</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-scroll" transform="translate(-705.000000, -766.000000)">
+            <g id="Hero">
+                <g id="Mouse" transform="translate(705.000000, 766.000000)">
+                    <path d="M1.21766206,19.9874997 L1.23563141,20.0465985 L1.23563141,25.6 C1.23563141,32.8773761 7.23829106,38.8000001 14.6302261,38.8000001 C22.0221616,38.8000001 28.0248207,32.8773764 28.0248207,25.6 L28.0248207,20.0261336 L28.0328824,19.9874997 L28.0248207,19.9488654 L28.0248207,14.4 C28.0248207,7.12262412 22.0221613,1.19999993 14.6302261,1.19999993 C7.23829135,1.19999993 1.23563141,7.1226244 1.23563141,14.4 L1.23563141,19.9284006 L1.21766206,19.9874997 Z" id="Shape" stroke="#CBCBCB" stroke-width="2.39999986" fill-rule="nonzero"></path>
+                    <rect id="Rectangle-13" fill="#D8D8D8" x="13" y="15" width="3" height="5" rx="1.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

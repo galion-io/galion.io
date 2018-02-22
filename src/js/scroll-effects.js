@@ -25,6 +25,13 @@
     .setPin('#hero')
     .addTo(controller)
     .on('progress', function(ev) {
+      // hide scroll indicator
+      if (ev.progress > 0) {
+        $('#hero #scroll-indicator').css('opacity', 0);
+      } else {
+        $('#hero #scroll-indicator').css('opacity', 1);
+      }
+
       // move cryptoballs
       var ballx = [5, 15, 25, 20, 35, 45, 55, 65, 70, 75, 85, 95];
       var bally = [20, 70, 50, 85, 30, 30, 45, 65, 20, 50, 25, 75];
@@ -50,40 +57,72 @@
       });
 
       var PHONE_START = 0.2;
-      var PHONE_DURATION = 1 - PHONE_START;
+      var PHONE_END = 0.8;
+      var PHONE_DURATION = PHONE_END - PHONE_START;
       var $phone = $('#hero-phone');
-      if (ev.progress > PHONE_START) {
+      if (ev.progress > PHONE_START && ev.progress < PHONE_END) {
         var phoneProgress = (ev.progress - PHONE_START) / PHONE_DURATION;
-        $phone.css('bottom', -1 * $phone.height() + ($phone.height() + 100) * phoneProgress);
+        $phone.css('bottom', -1 * $phone.height() + ($phone.height() + 30) * phoneProgress);
+      } else if (ev.progress > PHONE_END) {
+        $phone.css('bottom', 30);
       } else {
         $phone.css('bottom', -1 * $phone.height());
+      }
+
+      var $phoneContent = $('#hero-phone-content');
+      var PHONE_CONTENT_START = 0.6;
+      if (ev.progress > PHONE_CONTENT_START) {
+        $phoneContent.css('opacity', 1);
+      } else {
+        $phoneContent.css('opacity', 0);
       }
     });
 
   var $token = $('#tokensale .token');
   var $piechart = $('#tokensale .piechart');
-  var $tokentext = $('#tokensale .text');
+  var $tokentext = $('#tokensale .text-token');
+  var $saletext = $('#tokensale .text-sale');
   new ScrollMagic.Scene({
     triggerElement: '#trigger-tokensale-top',
     duration: 1 * y,
-    triggerHook: 0.5
+    triggerHook: 0.2
   })
     .setPin('#tokensale')
-    .addIndicators({ name: 'tokensale' })
     .addTo(controller)
     .on('progress', function(ev) {
-      var rotate = (ev.progress * -1 * 360) % 360;
-      $token.css('left', ((1 - ev.progress) * 100) + '%');
+      var TOKEN_START = 0.4;
+      var SALE_START = 0.7;
+
+      var rollProgress = ev.progress / TOKEN_START;
+      if (rollProgress > 1) {
+        rollProgress = 1;
+      }
+      var rotate = (rollProgress * -1 * 360) % 360;
+
+      $token.css('left', 50 + (60 - rollProgress * 60) + '%');
       $token.css('transform', 'rotate(' + rotate + 'deg)');
 
-      if (ev.progress === 1) {
-        $token.css('opacity', '0');
-        $piechart.css('opacity', '1');
-        $tokentext.css('opacity', '1');
-      } else {
+      if (ev.progress < TOKEN_START) {
         $token.css('opacity', '1');
-        $piechart.css('opacity', '0');
         $tokentext.css('opacity', '0');
+        $tokentext.css('display', 'none');
+        $piechart.css('opacity', '0');
+        $saletext.css('display', 'none');
+        $saletext.css('opacity', '0');
+      } else if (ev.progress >= TOKEN_START && ev.progress < SALE_START) {
+        $token.css('opacity', '1');
+        $tokentext.css('opacity', '1');
+        $tokentext.css('display', 'block');
+        $piechart.css('opacity', '0');
+        $saletext.css('display', 'none');
+        $saletext.css('opacity', '0');
+      } else {
+        $token.css('opacity', '0');
+        $tokentext.css('opacity', '0');
+        $tokentext.css('display', 'none');
+        $piechart.css('opacity', '1');
+        $saletext.css('display', 'block');
+        $saletext.css('opacity', '1');
       }
     });
 })(window);

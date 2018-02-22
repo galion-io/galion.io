@@ -40,17 +40,17 @@
       <div class="cryptoball"></div>
       <div class="cryptoball"></div>
       <div class="cryptoball"></div>
-      <div id="hero-phone"></div>
+      <div id="hero-phone"><div id="hero-phone-content"></div></div>
 
       <header>
-        <div class="brand">
+        <div class="brand" onclick="goto.hero()">
           Galion
         </div>
         <nav>
-          <a>Whitepaper</a>
+          <a target="_blank" href="whitepaper.pdf">Whitepaper</a>
           <a>blog</a>
           <a>faq</a>
-          <a class="btn-border">Try our app</a>
+          <a class="btn-border" target="_blank" href="https://app.galion.io">Try our app</a>
           <a class="btn-color">Register whitelist</a>
         </nav>
       </header>
@@ -67,22 +67,23 @@
           <input type="submit" value="Subscribe" />
         </form>
       </div>
+      <div id="scroll-indicator hide-on-mobile"></div>
     </section>
 
     <section id="vision" class="mainsection clearfix">
       <h1 class="section-title title">Our vision</h1>
       <section>
-        <div class="vision vision1"></div>
+        <img class="vision" src="img/icon_market.svg" />
         <h3>Get a clear picture of your financial situation and the market.</h3>
-        <p>Follow all your cryptocurrencies and traditional accounts in one place whether they are exchanges accounts, blockchain addresses or third party services.</p>
+        <p>Follow all your cryptocurrencies and traditional accounts in one place whether they are exchanges accounts, blockchain addresses or bank accounts.</p>
       </section>
       <section>
-        <div class="vision vision2"></div>
+        <img class="vision" src="img/icon_brain.svg" />
         <h3>Make smarter decisions for your money</h3>
         <p>Make informed decision, by providing in-depth analysis of your portfolio performances, expenses and revenues and point you to the next best move for your particular situation.</p>
       </section>
       <section>
-        <div class="vision vision3"></div>
+        <img class="vision" src="img/icon_oneplace.svg" />
         <h3>Access all your financial services in one place.</h3>
         <p>Galion will integrate all the financial services you need to manage your assets. You will never feel the need to use another app.</p>
       </section>
@@ -113,13 +114,6 @@
         <p class="section-text">
           Galion is already the best crypto-assets monitoring tool on the market,<br>
           but we will turn it into so much more:<br>
-          <br>
-          <br>
-          <br>
-          <a class="btn">
-            <img src="img/150x150.png" />
-            Join the Trello
-          </a>
         </p>
       </div>
       <div class="timeline">
@@ -129,19 +123,75 @@
           <br>
           We will give our community of early users the opportunity to buy Galion tokens at a 20% discount as part of our token pre-sale.
         </div>
-        <div class="text text-2019" style="display: none">
+        <div class="text text-2019 show-on-mobile" style="display: none">
           2019<br>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="text text-2020" style="display: none">
+        <div class="text text-2020 show-on-mobile" style="display: none">
           2020<br>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="text text-2021" style="display: none">
+        <div class="text text-2021 show-on-mobile" style="display: none">
           2021<br>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="blocks blocks-2018 clearfix">
+        <div class="blocks clearfix">
+          <div class="block" id="block-2018">
+            <h3 class="clearfix">
+              <div class="icon"></div>
+              Lorem 2018<br>
+              dolor sit amet
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="block">
+            <h3 class="clearfix">
+              <div class="icon"></div>
+              Lorem ipsum<br>
+              dolor sit amet
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="block">
+            <h3 class="clearfix">
+              <div class="icon"></div>
+              Lorem ipsum<br>
+              dolor sit amet
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="block">
+            <h3 class="clearfix">
+              <div class="icon"></div>
+              Lorem ipsum<br>
+              dolor sit amet
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="block" id="block-2019">
+            <h3 class="clearfix">
+              <div class="icon"></div>
+              Lorem 2019<br>
+              dolor sit amet
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="block">
+            <h3 class="clearfix">
+              <div class="icon"></div>
+              Lorem ipsum<br>
+              dolor sit amet
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="block">
+            <h3 class="clearfix">
+              <div class="icon"></div>
+              Lorem ipsum<br>
+              dolor sit amet
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
           <div class="block">
             <h3 class="clearfix">
               <div class="icon"></div>
@@ -166,36 +216,14 @@
             </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
           </div>
-        </div>
-        <div class="blocks blocks-2019 clearfix" style="display:none">
-          <div class="block">
+          <div class="block" id="block-2020">
             <h3 class="clearfix">
               <div class="icon"></div>
-              Lorem ipsum<br>
+              Lorem 2020<br>
               dolor sit amet
             </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
           </div>
-          <div class="block">
-            <h3 class="clearfix">
-              <div class="icon"></div>
-              Lorem ipsum<br>
-              dolor sit amet
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-          </div>
-        </div>
-        <div class="blocks blocks-2020 clearfix" style="display:none">
-          <div class="block">
-            <h3 class="clearfix">
-              <div class="icon"></div>
-              Lorem ipsum<br>
-              dolor sit amet
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-          </div>
-        </div>
-        <div class="blocks blocks-2021 clearfix" style="display:none">
           <div class="block">
             <h3 class="clearfix">
               <div class="icon"></div>
@@ -216,6 +244,14 @@
             <h3 class="clearfix">
               <div class="icon"></div>
               Lorem ipsum<br>
+              dolor sit amet
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="block" id="block-2021">
+            <h3 class="clearfix">
+              <div class="icon"></div>
+              Lorem 2021<br>
               dolor sit amet
             </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
@@ -232,22 +268,26 @@
         <div class="nav">
           <div class="wrapper">
             <div class="line"></div>
-            <div class="item active" onclick="toggleRoadmapYear(this, 2018)">
-              <div class="icon icon-inactive" style="display:none"></div>
-              <div class="icon icon-active icon-2018"></div>
+            <div class="item active" onclick="scrollRoadmapTo(2018)" id="nav-roadmap-2018">
+              <div class="icon icon-inactive icon-rocket" style="display:none">
+                <img src="img/rocket-nobg.svg"/>
+              </div>
+              <div class="icon icon-active icon-2018 icon-rocket">
+                <img src="img/rocket.svg"/>
+              </div>
               <div class="item-text">2018</div>
             </div>
-            <div class="item" onclick="toggleRoadmapYear(this, 2019)">
+            <div class="item" onclick="scrollRoadmapTo(2019)" id="nav-roadmap-2019">
               <div class="icon icon-inactive"></div>
               <div class="icon icon-active icon-2019" style="display:none"></div>
               <div class="item-text">2019</div>
             </div>
-            <div class="item" onclick="toggleRoadmapYear(this, 2020)">
+            <div class="item" onclick="scrollRoadmapTo(2020)" id="nav-roadmap-2020">
               <div class="icon icon-inactive"></div>
               <div class="icon icon-active icon-2020" style="display:none"></div>
               <div class="item-text">2020</div>
             </div>
-            <div class="item" onclick="toggleRoadmapYear(this, 2021)">
+            <div class="item" onclick="scrollRoadmapTo(2021)" id="nav-roadmap-2021">
               <div class="icon icon-inactive"></div>
               <div class="icon icon-active icon-2021" style="display:none"></div>
               <div class="item-text">2021</div>
@@ -260,14 +300,18 @@
     <div id="trigger-tokensale-top"></div>
     <section id="tokensale" class="mainsection clearfix">
       <div class="token"></div>
+      <div class="text-token">
+        <h1 class="title section-title">GLN Token</h1>
+        <p class="section-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
       <div class="piechart"></div>
-      <div class="text">
+      <div class="text-sale">
         <h1 class="title section-title">The sale</h1>
         <p class="section-text">A total of 1 000 000 000 tokens will be created. We will offer 60% of them for sale: 100 000 000 as part of our early pre-sale starting on xx/xx/xxxx, and 500 000 000 as part of our token sale, starting on xx/xx/xxxx.
-
-        We will give our community of early users the opportunity to buy Galion tokens at a 20% discount as part of our token pre-sale.<br>
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <br><br>
+        We will give our community of early users the opportunity to buy Galion tokens at a 20% discount as part of our token pre-sale.
         </p>
       </div>
     </section>
@@ -276,7 +320,9 @@
       <div class="france-logo"></div>
       <div class="text">
         <h1 class="title section-title">Compliant with regulations: investors’ peace of mind</h1>
-        <p class="section-text">Galion is a french company operating out of Paris, which comes with many benefits for our users: the peace of mind of a well regulated environment, be it security-wise or privacy-wise. As a Galion user, your data is protected by the European General Data Protection  Regulation.The same goes for participants in our token sale, whom enjoy the protection of the AMF (Autorité des Marchés Financiers) , the French equivalent  to the SEC, as well as French and European regulatory environments.</p>
+        <p class="section-text">
+          Galion is a french company operating out of Paris, which comes with many benefits for our users: the peace of mind of a well regulated environment, be it security-wise or privacy-wise. As a Galion user, your data is protected by the European General Data Protection Regulation.<br>
+          <br>The same goes for participants in our token sale, whom enjoy the protection of the AMF (Autorité des Marchés Financiers), the French equivalent to the SEC, as well as French and European regulatory environments.</p>
       </div>
     </section>
 
@@ -296,11 +342,11 @@
     <section id="team" class="mainsection clearfix">
       <section id="portraits">
         <h1 class="title section-title">The Galion Team</h1>
-        <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
         <div class="portraits-wrapper">
           <article class="portrait active clearfix" onclick="focusPortrait(this)">
-            <div class="image" style="background-image:url('img/ev.png')"></div>
+            <div class="image" style="background-image:url('img/team_edouard.jpg')"></div>
             <div class="text">
               <div class="name">Edouard Viguier</div>
               <div class="job">COO</div>
@@ -308,7 +354,7 @@
             <p>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </article>
           <article class="portrait clearfix" onclick="focusPortrait(this)">
-            <div class="image" style="background-image:url('img/rb.png')"></div>
+            <div class="image" style="background-image:url('img/team_romain.jpg')"></div>
             <div class="text">
               <div class="name">Romain Bury</div>
               <div class="job">COO</div>
@@ -316,7 +362,7 @@
             <p>B. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </article>
           <article class="portrait clearfix" onclick="focusPortrait(this)">
-            <div class="image" style="background-image:url('img/cr.png')"></div>
+            <div class="image" style="background-image:url('img/team_charles.jpg')"></div>
             <div class="text">
               <div class="name">Charles Riche</div>
               <div class="job">COO</div>
@@ -324,7 +370,7 @@
             <p>C. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </article>
           <article class="portrait clearfix" onclick="focusPortrait(this)">
-            <div class="image" style="background-image:url('img/ea.png')"></div>
+            <div class="image" style="background-image:url('img/team_emilien.jpg')"></div>
             <div class="text">
               <div class="name">Emilien André</div>
               <div class="job">COO</div>
@@ -332,7 +378,7 @@
             <p>D. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </article>
           <article class="portrait clearfix" onclick="focusPortrait(this)">
-            <div class="image" style="background-image:url('img/eb.png')"></div>
+            <div class="image" style="background-image:url('img/team_erwan.jpg')"></div>
             <div class="text">
               <div class="name">Erwan Beauvois</div>
               <div class="job">COO</div>
@@ -341,38 +387,23 @@
           </article>
         </div>
       </section>
-      <section id="bigface" style="background-image:url('img/ev.png')"></section>
+      <section id="bigface" style="background-image:url('img/team_edouard.jpg')"></section>
       <section id="bigface-text">
         <div class="name">Edouard Viguier</div>
         <div class="job">COO</div>
         <p>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="links"><a></a> <a></a></div>
       </section>
     </section>
 
     <section id="advisors" class="mainsection clearfix">
       <h1 class="section-title">Board of advisors</h1>
       <article class="advisor">
-        <div class="image"></div>
+        <div class="image" style="background-image:url('img/advisor_claire.jpg')"></div>
         <div class="name">Claire<br>Balva</div>
         <div class="job">CEO and co-founder of Blockchain Partner</div>
         <div class="links">
           <a></a>
-        </div>
-      </article>
-      <article class="advisor">
-        <div class="image"></div>
-        <div class="name">Ilaria<br>Booba</div>
-        <div class="job">CEO and co-founder of Blockchain Partner</div>
-        <div class="links">
-          <a></a>
-          <a></a>
-        </div>
-      </article>
-      <article class="advisor">
-        <div class="image"></div>
-        <div class="name">Jacques<br>Pantin</div>
-        <div class="job">CEO and co-founder of Blockchain Partner</div>
-        <div class="links">
           <a></a>
           <a></a>
           <a></a>
@@ -380,8 +411,8 @@
       </article>
       <article class="advisor">
         <div class="image"></div>
-        <div class="name">Meuf<br>Yahoo</div>
-        <div class="job">CEO and co-founder of Blockchain Partner</div>
+        <div class="name">Lorem<br>Ipsum</div>
+        <div class="job">Lorem ipsum dolor sit amet.</div>
         <div class="links">
           <a></a>
           <a></a>
@@ -389,10 +420,17 @@
       </article>
       <article class="advisor">
         <div class="image"></div>
-        <div class="name">Elon<br>Musk</div>
-        <div class="job">CEO and co-founder of Blockchain Partner</div>
+        <div class="name">Lorem<br>Ipsum</div>
+        <div class="job">Lorem ipsum dolor sit amet.</div>
         <div class="links">
           <a></a>
+        </div>
+      </article>
+      <article class="advisor">
+        <div class="image"></div>
+        <div class="name">Lorem<br>Ipsum</div>
+        <div class="job">Lorem ipsum dolor sit amet.</div>
+        <div class="links">
           <a></a>
           <a></a>
         </div>
@@ -425,7 +463,7 @@
             <input type="submit" value="Subscribe" />
           </form>
         </div>
-        <img src="img/phone.png" />
+        <img src="img/phone-with-content.png" />
       </div>
     </section>
 
@@ -433,8 +471,8 @@
       <table>
         <tr>
           <th>
-            <img src="img/logo.png" alt="galion-logo" />
-            <span class="hide-on-mobile">Galion</span>
+            <img src="img/logo.svg" alt="galion-logo" />
+            <span class="hide-on-mobile brand">Galion</span>
           </th>
           <th>Links</th>
           <th>Support</th>
@@ -442,7 +480,7 @@
         </tr>
         <tr>
           <td>
-            <span class="hide-on-mobile">
+            <span class="hide-on-mobile colored">
               Track and manage all your financial assets in one place.<br>
               Lorem ispum au moins deux lignes
             </span>
@@ -460,9 +498,9 @@
             <a>Email contact</a>
           </td>
           <td rowspan="2">
-            <a>info@galion.io</a>
-            <a>+33 6 12 34 56 78</a>
+            <a>xxx@galion.io</a>
             <a>fb, linkedin, twitter...</a>
+            <a>medium, telegram...</a>
           </td>
         </tr>
         <tr>
@@ -477,8 +515,8 @@
     <!-- build:js script.js -->
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/ScrollMagic.js"></script>
-    <script src="js/lib/debug.addIndicators.js"></script>
     <script src="js/lib/jquery.mousewheel.js"></script>
+    <script src="js/lib/jquery.scrollTo.min.js"></script>
     <script src="js/mailchimp.js"></script>
     <script src="js/hero-cryptoballs.js"></script>
     <script src="js/features.js"></script>

@@ -30,7 +30,7 @@
   background-image: url('img/wp1.png');
   margin: 3em 0 -5em;
   border-radius: 10px;
-  box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.3);
   max-width: 100%;
 }
 
@@ -43,20 +43,35 @@
   box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
   top: 50%;
   margin-top: -30px;
-  background-image: url('img/wp-arrow-left.png');
+  background-image: url('img/wp-arrow-left.svg');
   background-size: 30px 30px;
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-#whitepaper .image .nav-left {
-  left: -30px;
+#whitepaper .image .nav-left, #whitepaper .image .nav-right {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
+  top: 50%;
+  margin-top: -30px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
-
+#whitepaper .image .nav-left {
+  background-image: url('img/wp-arrow-left.svg');
+  left: -30px;
+  background-position: 15px center;
+}
 #whitepaper .image .nav-right {
+  background-image: url('img/wp-arrow-right.svg');
   right: -30px;
-  transform: rotateZ(180deg);
+  background-position: 19px center;
 }
 
 @media screen and (max-width: 1000px) {

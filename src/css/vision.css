@@ -36,19 +36,6 @@
   display: inline-block;
   height: 100px;
   width: 100px;
-  border: 5px solid white;
-  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.1);
-  border-radius: 50px;
-}
-
-#vision .vision.vision1 {
-  background: linear-gradient(129.86deg, #6D0096 0%, #E9649B 100%);
-}
-#vision .vision.vision2 {
-  background: linear-gradient(108.88deg, #634382 0%, #884C84 100%);
-}
-#vision .vision.vision3 {
-  background: linear-gradient(129.86deg, #C531A3 0%, #E17C91 100%);
 }
 
 @media screen and (max-width: 1000px) {

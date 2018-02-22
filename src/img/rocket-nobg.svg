@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="40px" viewBox="0 0 33 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26,10 C25.9867903,10 25.9779846,10 25.964775,10 C21.4779841,10.0396279 17.0044028,13.3595893 14.7632094,15.6007828 C12.5088063,15.6007828 9.12720157,16.7279843 8,18.9823875 L13.6360078,18.9823875 L12.5088063,21.2367906 L14.7279843,23.4911937 L16.9823875,22.3639922 L16.9823875,28 C19.2367906,26.8727984 20.3639922,23.4911937 20.3639922,21.2367906 C22.6051856,18.9955972 25.9251471,14.5220159 25.964775,10.035225 L26,10 Z M21.4911937,13.3463796 C22.1120349,13.3463796 22.6183953,13.85274 22.6183953,14.4735812 C22.6183953,15.0944224 22.1120349,15.6007828 21.4911937,15.6007828 C20.8703525,15.6007828 20.3639922,15.0944224 20.3639922,14.4735812 C20.3639922,13.85274 20.8703525,13.3463796 21.4911937,13.3463796 Z M12.0156556,21.9060665 C12.0156556,21.9060665 10.2279849,22.5973578 10.2279849,25.741194 L10.2191781,25.7455969 L10.2235809,25.7455969 C13.3674171,25.741194 14.0587084,23.9535222 14.0587084,23.9535222 L13.8473581,23.7421719 C13.8473581,23.7421719 13.0415848,24.4026422 11.5797453,24.4026422 L11.5709396,24.4026422 L11.5709396,24.3894325 C11.5709396,22.927593 12.2270059,22.1174168 12.2270059,22.1174168 L12.0156556,21.9060665 Z" id="path-1"></path>
+        <filter x="-83.3%" y="-83.3%" width="266.7%" height="266.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-820.000000, -3121.000000)" fill-rule="nonzero">
+            <g id="Roadmap" transform="translate(140.000000, 2386.000000)">
+                <g id="Timeline" transform="translate(845.500000, 754.500000) rotate(-90.000000) translate(-845.500000, -754.500000) translate(827.000000, 587.000000)">
+                    <g id="Group">
+                        <g id="Shape" transform="translate(17.000000, 19.000000) rotate(45.000000) translate(-17.000000, -19.000000) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

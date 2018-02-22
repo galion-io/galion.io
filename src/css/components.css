@@ -91,6 +91,9 @@
   }
 
   .hide-on-mobile {
-    display: none;
+    display: none !important;
+  }
+  .show-on-mobile {
+    display: block !important;
   }
 }
