@@ -1,28 +1,70 @@
 (function(window) {
   var $ = window.jQuery;
   var SCROLL_SPEED = 1000;
+  var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight || e.clientHeight || g.clientHeight;
 
-  // usage: goto.hero();
-  window.goto = {
-    hero: function() {
-      $('html, body').animate({
-        scrollTop: $('#trigger-hero-top').offset().top
-      }, SCROLL_SPEED);
-    },
-    vision: function() {
-      $('html, body').animate({
-        scrollTop: $('#trigger-vision-top').offset().top + 100
-      }, SCROLL_SPEED);
-    },
-    tokensale: function() {
-      $('html, body').animate({
-        scrollTop: $('#trigger-tokensale-top').offset().top + 700
-      }, SCROLL_SPEED);
-    },
-    team: function() {
-      $('html, body').animate({
-        scrollTop: $('#team').offset().top
-      }, SCROLL_SPEED);
-    }
+  var sections = {
+    hero: { id: 'hero', offset: -y, label: 'Page top' },
+    vision: { id: 'vision', offset: 0, label: 'Our vision' },
+    features: { id: 'features', offset: -100, label: 'Features' },
+    roadmap: { id: 'roadmap', offset: -100, label: 'Roadmap' },
+    tokensaleToken: { id: 'trigger-tokensale-top', offset: y / 4 + 10, label: 'Token usage' },
+    tokensalePie: { id: 'trigger-tokensale-top', offset: y / 2 + 10, label: 'Token sale repartition' },
+    france: { id: 'france', offset: -200, label: 'Compliant with regulations' },
+    team: { id: 'team', offset: -130, label: 'Team' },
+    advisors: { id: 'advisors', offset: -100, label: 'Advisors' },
+    whitepaper: { id: 'whitepaper', offset: 20, label: 'Whitepaper' },
   };
+
+  var $menu = $('body > nav');
+  window.goto = {};
+  for (var key in sections) {
+    (function(key) {
+      window.goto[key] = function() {
+        $('html, body').animate({
+          scrollTop: $('#' + sections[key].id).position().top + sections[key].offset
+        }, SCROLL_SPEED);
+      };
+      sections[key].$el = $('#' + sections[key].id);
+    })(key);
+    $menu.append($([
+      '<a id="nav-bullet-' + key + '" onclick="goto.' + key + '()" tooltip="' + sections[key].label + '">',
+      '<span class="bullet"></span>',
+      '<span class="text">' + sections[key].label + '</span>',
+      '</a>'
+    ].join('')));
+  }
+
+  if (x > 1000) { // only for desktop
+    var $header = $('header').first();
+    $(window).scroll(function(ev) {
+      // menu bullet highlight
+      for (var key in sections) {
+        var s = sections[key];
+        if (ev.currentTarget.pageYOffset >= s.$el.position().top + s.offset - 20) {
+          $menu.find('a.active').removeClass('active');
+          $('#nav-bullet-' + key).addClass('active');
+        }
+      }
+
+      // sticky header
+      if (ev.currentTarget.pageYOffset < y + 100) {
+        $header.removeClass('soonfixed');
+        $header.removeClass('fixed');
+      } else if (ev.currentTarget.pageYOffset < 2 * y - 70) {
+        $header.addClass('soonfixed');
+        $header.removeClass('fixed');
+      } else {
+        $header.addClass('soonfixed');
+        $header.addClass('fixed');
+      }
+    });
+  }
+
+  $(window).scroll();
 })(window);

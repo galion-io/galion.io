@@ -125,22 +125,4 @@
         $saletext.css('opacity', '1');
       }
     });
-
-
-  // sticky header
-  if (x > 800) { // only for desktop
-    var $header = $('header').first();
-    $(window).scroll(function(ev) {
-      if (ev.currentTarget.pageYOffset < y + 100) {
-        $header.removeClass('soonfixed');
-        $header.removeClass('fixed');
-      } else if (ev.currentTarget.pageYOffset < 2 * y - 70) {
-        $header.addClass('soonfixed');
-        $header.removeClass('fixed');
-      } else {
-        $header.addClass('soonfixed');
-        $header.addClass('fixed');
-      }
-    });
-  }
 })(window);

@@ -23,3 +23,74 @@ body {
   outline: none;
   user-select: none;
 }
+
+body > nav {
+  z-index: 9999;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  width: 20px;
+  transform: translateY(-50%);
+}
+
+body > nav a {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 3px 10px;
+}
+
+body > nav a .bullet {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+body > nav a .text {
+  display: inline-block;
+  text-indent: 999px;
+}
+
+body > nav a.active {
+  padding: 7px 7px 3px 8px;
+}
+body > nav a.active .bullet {
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+  background: white;
+  border: 1px solid #fff;
+}
+
+body > nav.colored a .bullet {
+  border-color: #E9649B;
+}
+body > nav.colored a.active .bullet {
+  background: #E9649B;
+}
+
+body > nav *[tooltip]:after {
+  opacity: 0;
+  z-index: 9999;
+  text-indent: 0;
+  transition: opacity 0.3s;
+  content: attr(tooltip);
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  content: attr(tooltip);
+  padding: 0 1em;
+  border-radius: 15px;
+  line-height: 30px;
+  color: #fff;
+  background: linear-gradient(130deg,#a12696,#e35f9b);
+  font-size: 0.9em;
+}
+
+body > nav *[tooltip]:hover:after {
+  opacity: 1;
+}
