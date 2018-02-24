@@ -14,6 +14,28 @@
   line-height: 100px;
 }
 
+#hero header.soonfixed {
+
+}
+#hero header.soonfixed {
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  position: fixed;
+  top: -70px;
+  transition: top .1s ease-out;
+  left: 0;
+  background: #1c2a4e;
+  z-index: 9999;
+  line-height: 70px;
+  height: 70px;
+  width: 100%;
+}
+#hero header.soonfixed .brand {
+  background-position: 42px 14px;
+}
+#hero header.soonfixed.fixed {
+  top: 0;
+}
+
 #hero .brand {
   float: left;
   padding: 0 2em 0 100px;
