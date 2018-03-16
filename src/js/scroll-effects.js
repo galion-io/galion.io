@@ -79,50 +79,28 @@
     });
 
   var $token = $('#tokensale .token');
-  var $piechart = $('#tokensale .piechart');
   var $tokentext = $('#tokensale .text-token');
-  var $saletext = $('#tokensale .text-sale');
   new ScrollMagic.Scene({
     triggerElement: '#trigger-tokensale-top',
-    duration: 1 * y,
-    triggerHook: 0.2
+    duration: 0.3 * y,
+    triggerHook: 0.5
   })
     .setPin('#tokensale')
     .addTo(controller)
     .on('progress', function(ev) {
-      var TOKEN_START = 0.4;
-      var SALE_START = 0.7;
+      var rotate = (ev.progress * -1 * 360) % 360;
 
-      var rollProgress = ev.progress / TOKEN_START;
-      if (rollProgress > 1) {
-        rollProgress = 1;
-      }
-      var rotate = (rollProgress * -1 * 360) % 360;
-
-      $token.css('left', 50 + (60 - rollProgress * 60) + '%');
+      $token.css('left', 50 + (60 - ev.progress * 60) + '%');
       $token.css('transform', 'rotate(' + rotate + 'deg)');
 
-      if (ev.progress < TOKEN_START) {
+      if (ev.progress < 1) {
         $token.css('opacity', '1');
         $tokentext.css('opacity', '0');
         $tokentext.css('display', 'none');
-        $piechart.css('opacity', '0');
-        $saletext.css('display', 'none');
-        $saletext.css('opacity', '0');
-      } else if (ev.progress >= TOKEN_START && ev.progress < SALE_START) {
+      } else if (ev.progress >= 1) {
         $token.css('opacity', '1');
         $tokentext.css('opacity', '1');
         $tokentext.css('display', 'block');
-        $piechart.css('opacity', '0');
-        $saletext.css('display', 'none');
-        $saletext.css('opacity', '0');
-      } else {
-        $token.css('opacity', '0');
-        $tokentext.css('opacity', '0');
-        $tokentext.css('display', 'none');
-        $piechart.css('opacity', '1');
-        $saletext.css('display', 'block');
-        $saletext.css('opacity', '1');
       }
     });
 })(window);

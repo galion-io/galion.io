@@ -22,14 +22,16 @@
 
   var $blocks = $('#roadmap .blocks');
   $blocks.scroll(function() {
-    if ($('#roadmap #block-2021').position().left <= $blocks.width()) {
-      window.toggleRoadmapYear('2021');
-    } else if ($('#roadmap #block-2020').position().left <= $blocks.width()) {
-      window.toggleRoadmapYear('2020');
-    } else if ($('#roadmap #block-2019').position().left <= $blocks.width()) {
-      window.toggleRoadmapYear('2019');
-    } else if ($('#roadmap #block-2018').position().left <= $blocks.width()) {
-      window.toggleRoadmapYear('2018');
+    if ($('#roadmap #block-2018s1').position().left >= -50) {
+      window.toggleRoadmapYear('2018s1');
+    } else if ($('#roadmap #block-2020s1').position().left <= $blocks.width()) {
+      window.toggleRoadmapYear('2020s1');
+    } else if ($('#roadmap #block-2019s2').position().left <= $blocks.width()) {
+      window.toggleRoadmapYear('2019s2');
+    } else if ($('#roadmap #block-2019s1').position().left <= $blocks.width()) {
+      window.toggleRoadmapYear('2019s1');
+    } else if ($('#roadmap #block-2018s2').position().left <= $blocks.width()) {
+      window.toggleRoadmapYear('2018s2');
     }
   });
 })(window);

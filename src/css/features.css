@@ -12,6 +12,7 @@
 #features .right {
   float: right;
   width: 40%;
+  padding-left: 3em;
 }
 
 #features .left nav {
@@ -35,14 +36,6 @@
   width: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-
-#features .right {
-  padding-left: 3em;
-}
-
-#features .right h1 {
-  margin-top: 5em;
 }
 #features .right p {
   margin-top: 40px;

@@ -11,13 +11,12 @@
   var sections = {
     hero: { id: 'hero', offset: -y, label: 'Page top' },
     vision: { id: 'vision', offset: 0, label: 'Our vision' },
-    features: { id: 'features', offset: -100, label: 'Features' },
+    features: { id: 'features', offset: -100, label: 'Our MVP' },
     roadmap: { id: 'roadmap', offset: -100, label: 'Roadmap' },
-    tokensaleToken: { id: 'trigger-tokensale-top', offset: y / 4 + 10, label: 'Token usage' },
-    tokensalePie: { id: 'trigger-tokensale-top', offset: y / 2 + 10, label: 'Token sale repartition' },
-    france: { id: 'france', offset: -200, label: 'Compliant with regulations' },
     team: { id: 'team', offset: -130, label: 'Team' },
     advisors: { id: 'advisors', offset: -100, label: 'Advisors' },
+    tokensaleToken: { id: 'trigger-tokensale-top', offset: 200, label: 'Token Usage & Token sale' },
+    france: { id: 'france', offset: -200, label: 'Compliant with regulations' },
     whitepaper: { id: 'whitepaper', offset: 20, label: 'Whitepaper' },
   };
 

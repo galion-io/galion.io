@@ -70,6 +70,19 @@
   color: #818181;
   line-height: 26px;
 }
+ul.section-text {
+  list-style-type: none;
+}
+ul.section-text li {
+  text-align: left;
+  font-size: 18px;
+  color: #818181;
+  line-height: 26px;
+  margin-top: 26px;
+}
+ul.section-text.compact li {
+  margin-top: 5px;
+}
 
 @media screen and (max-width: 1000px) {
   .mainsection {

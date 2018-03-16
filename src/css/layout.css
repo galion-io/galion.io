@@ -21,7 +21,6 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
   outline: none;
-  user-select: none;
 }
 
 body > nav {
@@ -82,7 +81,6 @@ body > nav *[tooltip]:after {
   top: 50%;
   right: 100%;
   transform: translateY(-50%);
-  content: attr(tooltip);
   padding: 0 1em;
   border-radius: 15px;
   line-height: 30px;
