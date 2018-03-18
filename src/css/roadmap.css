@@ -1,12 +1,15 @@
 #roadmap {
   padding-right: 0;
   box-shadow: 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff;
+  background-image:url(img/circle.png);
+  background-position: -400px 0;
+  padding-top:7em;
 }
 
 #roadmap .lefttext {
   width: calc(50% - 300px);
   float: left;
-  padding: 5em 3em 0 0;
+  padding: 10em 5em 0 0;
 }
 
 #roadmap .lefttext h1 {
@@ -19,6 +22,7 @@
   padding: .5em 2em;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 }
+
 #roadmap .lefttext .btn img {
   height: 24px;
   width: 24px;
@@ -30,7 +34,6 @@
   width: calc(50% + 300px);
   height: 100%;
   position: relative;
-  padding-bottom: 110px;
   float: right;
   background: #223361;
   border-top-left-radius: 10px;
@@ -39,12 +42,12 @@
 
 #roadmap .timeline .text {
   color: white;
-  opacity: .8;
-  padding: 4em;
+  opacity: .9;
+  padding: 1em 3em 3em;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  height: 330px;
+  height: 180px;
 }
 
 #roadmap .timeline .blocks {
@@ -52,7 +55,7 @@
   white-space: nowrap;
   overflow-x: auto;
   text-align: left;
-  padding: 0 15px 2em 15px;
+  padding: 0 15px 1em 15px;
 }
 
 #roadmap .timeline .block {
@@ -65,20 +68,21 @@
   white-space: normal;
   display: inline-block;
   width: 285px;
-  height: 375px;
+  height: auto;
   vertical-align: top;
 }
 
 #roadmap .timeline .block h3 {
 	color: #4F2D72;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 1.5em;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 #roadmap .timeline .block p {
 	text-align: left;
+  line-height: 20px;
 }
 
 #roadmap .timeline .block .icon {
@@ -93,7 +97,6 @@
 #roadmap .timeline .nav {
   height: 110px;
   width: 100%;
-  position: absolute;
   bottom: 0;
   left: 0;
   text-align: center;

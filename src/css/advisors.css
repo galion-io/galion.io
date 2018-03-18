@@ -1,5 +1,8 @@
 #advisors {
   text-align: center;
+  box-shadow: 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff;
+  background-image:url(img/circle.png);
+  background-position: -400px 0;
 }
 
 #advisors h1 {
@@ -8,9 +11,9 @@
 
 #advisors .advisor {
   display: inline-block;
+  vertical-align: top;
   margin: 1em;
-  width: 190px;
-  height: 280px;
+  width: 350px;
 }
 
 #advisors .advisor .image {
@@ -33,11 +36,10 @@
 
 #advisors .advisor .job {
   color: #818181;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 26px;
-  height: 400px;
-  text-align: justify;
+  padding:0 .5em 1em;
 }
 
 #advisors .advisor a {
@@ -45,7 +47,7 @@
   display: inline-block;
   height: 1.5em;
   width: 1.5em;
-  margin: .5em;
+  margin: .5em .5em 2em;
 }
 
 @media screen and (max-width: 1000px) {

@@ -13,6 +13,7 @@
   height: 100px;
   line-height: 100px;
 }
+
 #hero header.soonfixed {
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
   position: fixed;
@@ -25,9 +26,11 @@
   height: 70px;
   width: 100%;
 }
+
 #hero header.soonfixed .brand {
   background-position: 42px 14px;
 }
+
 #hero header.soonfixed.fixed {
   top: 0;
 }
@@ -51,12 +54,16 @@
 
 #hero nav a {
   font-size: 15px;
-  padding: 0.75em 1.5em;
-  margin: 0 .3em;
+  padding: 0.5em 0.75em;
+  margin: 0.3em 1.5em;
   font-weight: 500;
   cursor: pointer;
-  color: inherit;
+  color:inherit;
   text-decoration: none;
+}
+
+#hero nav a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 /* big text area */
@@ -64,8 +71,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 50%;
-  width: 600px;
+  left: 47%;
+  width: 700px;
   margin-left: -600px;
 }
 

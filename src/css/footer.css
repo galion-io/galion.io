@@ -44,6 +44,11 @@
   margin: 1.5em 0;
 }
 
+#footer a:hover {
+  color: #FFF;
+}
+
+
 @media screen and (max-width: 1000px) {
   #footer {
     padding: 1em;

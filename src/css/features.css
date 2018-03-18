@@ -1,19 +1,36 @@
 #features {
   padding-left: 0;
-  background: url(img/circle.png);
+  padding-right: 0;
+  box-shadow: 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff;
+  background-image:url(img/circle.png);
   background-position: -1100px 0;
+}
+
+#features .title {
+  text-align: center;
+  padding: 2em 10em 1em;
+}
+
+#features .subtitle {
+  text-align: center;
+  padding: 0 10em 1em;
 }
 
 #features .left {
   float: left;
-  width: calc(60% - 1em);
+  width: calc(50% - 1em);
 }
 
 #features .right {
   float: right;
-  width: 40%;
-  padding-left: 3em;
+  width: 50%;
 }
+
+#features .right .section-text {
+  float: right;
+  padding: 5em 10em 0 6em;
+}
+
 
 #features .left nav {
   text-align: center;

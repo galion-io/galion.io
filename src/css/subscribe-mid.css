@@ -1,11 +1,20 @@
 #subscribe-mid {
   text-align: center;
   padding-bottom: 0;
+  background:#223361;
+  height:200px;
+  padding:2em 0 0;
 }
 
-#subscribe-mid p {
-  padding: 1.5em 0;
+#subscribe-mid .section-title {
+  color:#fff;
+  line-height:60px;
 }
+
+#subscribe-mid form {
+  top:25px;
+}
+
 
 @media screen and (max-width: 1000px) {
   #subscribe-mid {
