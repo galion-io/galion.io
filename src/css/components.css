@@ -5,14 +5,9 @@
 }
 
 .btn-border {
-  color:#1c2a4e;
   border: 2px solid;
   border-radius: 1.5em;
   text-decoration: none;
-}
-
-.btn-border:hover {
-  background-color:#1c2a4e;
 }
 
 .btn-color {

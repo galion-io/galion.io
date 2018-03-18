@@ -12,13 +12,17 @@
   margin: 0 0 3em;
 }
 
+#vision .sections {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #vision section {
-  float: left;
-  width: calc(33% - 2em);
-  height: 350px;
+  flex: 1;
+  min-width: 300px;
   padding: 1em;
   background: #fff;
-  margin: 0 1em;
+  margin: 1em;
 	box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
   border-radius: 8px;
   text-align: center;
@@ -56,5 +60,6 @@
     padding: 1em;
     width: 100%;
     margin: 0 0 1em;
+    height: auto;
   }
 }

@@ -1,19 +1,23 @@
 #features {
   padding-left: 0;
   padding-right: 0;
-  box-shadow: 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff;
   background-image:url(img/circle.png);
-  background-position: -1100px 0;
+  background-position: center 0;
 }
 
 #features .title {
   text-align: center;
-  padding: 2em 10em 1em;
+  padding: 2em 1em 1em;
 }
 
 #features .subtitle {
   text-align: center;
-  padding: 0 10em 1em;
+  padding: 0 2em;
+}
+
+#features .subtitle p {
+  display: inline-block;
+  max-width: 900px;
 }
 
 #features .left {
@@ -34,12 +38,12 @@
 
 #features .left nav {
   text-align: center;
-  padding: 3em 0;
 }
 #features .left nav a {
   cursor: pointer;
   color: #30304D;
   opacity: 0.3;
+  display: inline-block;
   margin: 5em 2em 2em;
   padding: 1em 0;
   text-decoration: none;
@@ -55,7 +59,7 @@
   border-bottom-right-radius: 10px;
 }
 #features .right p {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -63,10 +67,11 @@
     width: 100%;
   }
   #features .left nav {
-    padding-bottom: 1em;
+    padding: 0;
   }
   #features .left nav a {
-    margin: 0 1em;
+    margin: 5px 1em;
+    width: 100%;
   }
 
   #features .right {
@@ -75,5 +80,8 @@
   }
   #features .right h1 {
     margin-top: 1em;
+  }
+  #features .right .section-text {
+    padding: 1em;
   }
 }
