@@ -123,6 +123,24 @@
   width: 20px;
 }
 
+@media screen and (max-width: 1400px) {
+  #team {
+    padding-left: 3em;
+  }
+  #team #portraits {
+    padding-top: 1em;
+  }
+  #team #portraits .portraits-wrapper {
+    padding: 0.5em 0;
+  }
+  #team #portraits .portrait {
+    padding: .2em 0 .2em 1.5em;
+  }
+  #team #portraits .section-text {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #team {
     padding: 2em;
