@@ -16,6 +16,19 @@
 }
 
 
+@media screen and (min-width: 1000px) {
+  #subscribe-mid {
+    opacity: 0;
+    padding-left: 200px;
+    transition: all 0.3s ease-out;
+  }
+  #subscribe-mid.shown{
+    opacity: 1;
+    padding-left: 0;
+  }
+}
+
+
 @media screen and (max-width: 1000px) {
   #subscribe-mid {
     padding-top: 2em;

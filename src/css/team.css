@@ -123,6 +123,18 @@
   width: 20px;
 }
 
+@media screen and (min-width: 1000px) {
+  #team #bigface, #team #bigface-text {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .3s ease-out;
+  }
+  #team.shown #bigface, #team.shown #bigface-text {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   #team {
     padding-left: 3em;

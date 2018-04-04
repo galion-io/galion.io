@@ -47,6 +47,27 @@
   width: 100px;
 }
 
+@media screen and (min-width: 1000px) {
+  #vision section {
+    transition: transform .3s ease-out;
+  }
+  #vision section.vision-left {
+    z-index: 0;
+    transform: translateX(100%) translateY(100px);
+  }
+  #vision section.vision-middle {
+    z-index: 1;
+    transform: translateY(50px);
+  }
+  #vision section.vision-right {
+    z-index: 0;
+    transform: translateX(-100%) translateY(100px);
+  }
+  #vision.shown section {
+    transform: translateX(0) translateY(0);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #vision {
     padding-top: 1em;

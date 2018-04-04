@@ -24,6 +24,18 @@
   height: 600px;
 }
 
+@media screen and (min-width: 1000px) {
+  #subscribe-bottom img {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all .3s ease-out;
+  }
+  #subscribe-bottom.shown img {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #subscribe-bottom {
     padding-top: 5em;

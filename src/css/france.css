@@ -42,3 +42,24 @@
     text-align: left;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  #france .france-logo {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .3s ease-out;
+  }
+  #france .text {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all .3s ease-out;
+  }
+  #france.shown .france-logo {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  #france.shown .text {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

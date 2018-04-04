@@ -103,4 +103,125 @@
         $tokentext.css('display', 'block');
       }
     });
+
+  var $vision = $('#vision');
+  new ScrollMagic.Scene({
+    triggerElement: '#vision',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.6) {
+        $vision.addClass('shown');
+      } else {
+        $vision.removeClass('shown');
+      }
+    });
+
+  var $features = $('#features');
+  new ScrollMagic.Scene({
+    triggerElement: '#dashboard',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.2) {
+        $features.addClass('shown');
+      } else {
+        $features.removeClass('shown');
+      }
+    });
+
+  var $roadmap = $('#roadmap');
+  new ScrollMagic.Scene({
+    triggerElement: '#roadmap',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.3) {
+        $roadmap.addClass('shown');
+      } else {
+        $roadmap.removeClass('shown');
+      }
+    });
+
+  var $team = $('#team');
+  new ScrollMagic.Scene({
+    triggerElement: '#team',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.3) {
+        $team.addClass('shown');
+      } else {
+        $team.removeClass('shown');
+      }
+    });
+
+  var $subscribeMid = $('#subscribe-mid');
+  new ScrollMagic.Scene({
+    triggerElement: '#subscribe-mid',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.3) {
+        $subscribeMid.addClass('shown');
+      } else {
+        $subscribeMid.removeClass('shown');
+      }
+    });
+
+  var $france = $('#france');
+  new ScrollMagic.Scene({
+    triggerElement: '#france',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.3) {
+        $france.addClass('shown');
+      } else {
+        $france.removeClass('shown');
+      }
+    });
+
+  var $whitepaper = $('#whitepaper');
+  new ScrollMagic.Scene({
+    triggerElement: '#whitepaper',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      console.log('ev.progress', ev.progress);
+      if (ev.progress > 0.8) {
+        $whitepaper.addClass('shown');
+      } else {
+        $whitepaper.removeClass('shown');
+      }
+    });
+
+  var $subscribeBottom = $('#subscribe-bottom');
+  new ScrollMagic.Scene({
+    triggerElement: '#subscribe-bottom',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.7) {
+        $subscribeBottom.addClass('shown');
+      } else {
+        $subscribeBottom.removeClass('shown');
+      }
+    });
 })(window);

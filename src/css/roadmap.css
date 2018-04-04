@@ -161,6 +161,22 @@
   color: #fff;
 }
 
+@media screen and (min-width: 1000px) {
+  #roadmap {
+    overflow-x: hidden;
+  }
+  
+  #roadmap .timeline {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all .3s ease-out;
+  }
+  #roadmap.shown .timeline {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #roadmap {
     padding: 0;
