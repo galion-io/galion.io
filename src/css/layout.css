@@ -3,6 +3,7 @@ html, body {
   font-family: avenir, sans-serif;
   width: 100%;
   background: #f9faff;
+	overflow-x: hidden;
 }
 
 /*html {

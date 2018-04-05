@@ -202,7 +202,6 @@
   })
     .addTo(controller)
     .on('progress', function(ev) {
-      console.log('ev.progress', ev.progress);
       if (ev.progress > 0.8) {
         $whitepaper.addClass('shown');
       } else {

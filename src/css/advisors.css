@@ -42,8 +42,9 @@
   padding:0 .5em 1em;
 }
 
-#advisors .advisor a {
-  background-color: #9F9F9F;
+#advisors .advisor a img {
+  filter: invert(100%);
+  opacity: 0.5;
   display: inline-block;
   height: 1.5em;
   width: 1.5em;
@@ -53,5 +54,9 @@
 @media screen and (max-width: 1000px) {
   #advisors .section-title {
     padding: .5em 0;
+  }
+  #advisors .advisor {
+    width: 100%;
+    margin: 0;
   }
 }

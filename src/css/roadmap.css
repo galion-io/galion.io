@@ -58,6 +58,14 @@
   padding: 0 15px 1em 15px;
 }
 
+#roadmap .timeline .year {
+  display: inline-block;
+  transform: rotate(-90deg);
+  padding: 130px 10px;
+  font-size: 26px;
+  color: white;
+}
+
 #roadmap .timeline .block {
 	border-radius: 8px;
 	background-color: #FFFFFF;
@@ -105,15 +113,9 @@
 #roadmap .timeline .nav .wrapper {
   display: inline-block;
   position: relative;
-}
-
-#roadmap .timeline .nav .wrapper .line {
-  position: absolute;
-  top: 37px;
-  left: 50px;
-  height: 1px;
-  width: calc(100% - 100px);
-  background: #D8D8D8;
+  background: url('img/timeline.png');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #roadmap .timeline .nav .wrapper .item {
@@ -165,7 +167,7 @@
   #roadmap {
     overflow-x: hidden;
   }
-  
+
   #roadmap .timeline {
     transform: translateX(30px);
     opacity: 0;
@@ -192,6 +194,11 @@
     border-radius: 0;
     padding-top: 110px;
     padding-bottom: 0;
+  }
+
+  #roadmap .timeline .year {
+    transform: rotate(0deg);
+    padding: 2em;
   }
 
   #roadmap .timeline .text {
