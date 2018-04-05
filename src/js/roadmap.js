@@ -10,9 +10,6 @@
 
     $el.find('.icon-active').css('display', 'block');
     $el.find('.icon-inactive').css('display', 'none');
-
-    $('#roadmap .text').css('display', 'none');
-    $('#roadmap .text.text-' + year).css('display', 'block');
   };
 
   window.scrollRoadmapTo = function scrollRoadmapTo(year) {
@@ -22,16 +19,18 @@
 
   var $blocks = $('#roadmap .blocks');
   $blocks.scroll(function() {
-    if ($('#roadmap #block-2018s1').position().left >= -50) {
-      window.toggleRoadmapYear('2018s1');
-    } else if ($('#roadmap #block-2020s1').position().left <= $blocks.width()) {
-      window.toggleRoadmapYear('2020s1');
-    } else if ($('#roadmap #block-2019s2').position().left <= $blocks.width()) {
-      window.toggleRoadmapYear('2019s2');
-    } else if ($('#roadmap #block-2019s1').position().left <= $blocks.width()) {
-      window.toggleRoadmapYear('2019s1');
-    } else if ($('#roadmap #block-2018s2').position().left <= $blocks.width()) {
-      window.toggleRoadmapYear('2018s2');
+    var selected = null;
+    var selectedOffset = null;
+    $blocks.children().each(function() {
+      var offset = $(this).position().left;
+      if (offset < 50 && (selectedOffset === null || selectedOffset < offset)) {
+        selectedOffset = offset;
+        selected = $(this).attr('id');
+      }
+    });
+    if ($('#block-2020s1').width() + $('#block-2020s1').position().left < $blocks.width() + 350) {
+      selected = 'block-2020s1';
     }
+    window.toggleRoadmapYear(selected.replace('block-', ''));
   });
 })(window);

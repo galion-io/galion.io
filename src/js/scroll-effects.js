@@ -262,7 +262,7 @@
   })
     .addTo(controller)
     .on('progress', function(ev) {
-      if (ev.progress > 0.5) {
+      if (ev.progress > 0.2) {
         $tokensaleMetrics.addClass('shown');
       } else {
         $tokensaleMetrics.removeClass('shown');

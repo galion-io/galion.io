@@ -43,11 +43,11 @@
 #roadmap .timeline .text {
   color: white;
   opacity: .9;
-  padding: 1em 3em 3em;
+  padding: 15px;
+  max-width: 630px;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
-  height: 180px;
+  white-space: normal;
 }
 
 #roadmap .timeline .blocks {
@@ -56,6 +56,10 @@
   overflow-x: auto;
   text-align: left;
   padding: 0 15px 1em 15px;
+}
+
+#roadmap .timeline .blockgroup {
+  display: inline-block;
 }
 
 #roadmap .timeline .year {
@@ -192,7 +196,6 @@
   #roadmap .timeline {
     width: 100%;
     border-radius: 0;
-    padding-top: 110px;
     padding-bottom: 0;
   }
 
