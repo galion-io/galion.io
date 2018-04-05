@@ -83,24 +83,24 @@
   new ScrollMagic.Scene({
     triggerElement: '#trigger-tokensale-top',
     duration: 0.3 * y,
-    triggerHook: 0.5
+    triggerHook: 0.6
   })
     .setPin('#tokensale')
     .addTo(controller)
     .on('progress', function(ev) {
       var rotate = (ev.progress * -1 * 360) % 360;
 
-      $token.css('left', 50 + (60 - ev.progress * 60) + '%');
+      $token.css('left', 0 + (100 - ev.progress * 100) + '%');
       $token.css('transform', 'rotate(' + rotate + 'deg)');
 
       if (ev.progress < 1) {
         $token.css('opacity', '1');
         $tokentext.css('opacity', '0');
-        $tokentext.css('display', 'none');
+        $tokentext.css('margin-left', '50px');
       } else if (ev.progress >= 1) {
         $token.css('opacity', '1');
         $tokentext.css('opacity', '1');
-        $tokentext.css('display', 'block');
+        $tokentext.css('margin-left', '0');
       }
     });
 
@@ -221,6 +221,51 @@
         $subscribeBottom.addClass('shown');
       } else {
         $subscribeBottom.removeClass('shown');
+      }
+    });
+
+  var $tokensaleRepartition = $('#tokensale-repartition');
+  new ScrollMagic.Scene({
+    triggerElement: '#tokensale-repartition',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.5) {
+        $tokensaleRepartition.addClass('shown');
+      } else {
+        $tokensaleRepartition.removeClass('shown');
+      }
+    });
+
+  var $tokensaleFunduse = $('#tokensale-funduse');
+  new ScrollMagic.Scene({
+    triggerElement: '#tokensale-funduse',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.5) {
+        $tokensaleFunduse.addClass('shown');
+      } else {
+        $tokensaleFunduse.removeClass('shown');
+      }
+    });
+
+  var $tokensaleMetrics = $('#tokensale-metrics');
+  new ScrollMagic.Scene({
+    triggerElement: '#tokensale-metrics',
+    duration: 1 * y,
+    triggerHook: 1
+  })
+    .addTo(controller)
+    .on('progress', function(ev) {
+      if (ev.progress > 0.5) {
+        $tokensaleMetrics.addClass('shown');
+      } else {
+        $tokensaleMetrics.removeClass('shown');
       }
     });
 })(window);

@@ -15,7 +15,7 @@
     roadmap: { id: 'roadmap', offset: -100, label: 'Roadmap' },
     team: { id: 'team', offset: -130, label: 'Team' },
     advisors: { id: 'advisors', offset: -100, label: 'Advisors' },
-    tokensaleToken: { id: 'trigger-tokensale-top', offset: 200, label: 'Token Usage & Token sale' },
+    tokensaleToken: { id: 'trigger-tokensale-top', offset: 100, label: 'Token Usage & Token sale' },
     france: { id: 'france', offset: -200, label: 'Compliant with regulations' },
     whitepaper: { id: 'whitepaper', offset: 20, label: 'Whitepaper' },
   };

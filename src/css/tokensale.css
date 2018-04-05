@@ -1,7 +1,17 @@
+#tokensale-intro {
+  padding-top: 10em;
+  padding-bottom: 0;
+  text-align: center;
+}
+#tokensale-intro p {
+  max-width: 600px;
+  display: inline-block;
+  padding: 2em;
+}
+
 #tokensale {
   position: relative;
   overflow: hidden;
-  min-height: 80vh;
   text-align: center;
 }
 
@@ -18,9 +28,9 @@
   height: 216px;
   width: 216px;
   position: absolute;
-  margin-left: -108px;
+  margin-left: 10em;
   text-align: center;
-  transition: opacity .1s;
+  transition: opacity .3s;
   left: 110%;
   top: 0;
   opacity: 1;
@@ -32,8 +42,10 @@
   float: left;
   width: 100%;
   opacity: 0;
-  padding-top: 240px;
-  transition: opacity .1s;
+  padding: 0 0 0 250px;
+  text-align: left;
+  margin-left: 50px;
+  transition: all .3s;
 }
 
 #tokensale .text .title {
@@ -41,12 +53,120 @@
 }
 
 #tokensale .section-text {
-  width: 800px;
   max-width: 100%;
   margin-top: 30px;
   display: inline-block;
 }
 
+#tokensale-repartition {
+  padding-top: 10em;
+}
+#tokensale-repartition .subtitle {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 30px;
+}
+#tokensale-repartition img {
+  float: right;
+  height: 300px;
+  width: 300px;
+  margin: 0 0 2em 2em;
+}
+
+#tokensale-funduse {
+  text-align: center;
+  padding-top: 5em;
+}
+#tokensale-funduse img {
+  height: 300px;
+  width: 300px;
+}
+#tokensale-funduse .title {
+  margin: 30px 0;
+}
+
+#tokensale-metrics {
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 10em;
+}
+#tokensale-metrics .title {
+  padding-bottom: 20px;
+}
+#tokensale-metrics table {
+  display: inline-block;
+}
+#tokensale-metrics td.label {
+  text-align: right;
+  font-weight: 500;
+}
+#tokensale-metrics td.label:after {
+  content: ':';
+}
+#tokensale-metrics td {
+  padding: 13px 10px;
+  text-align: left;
+  font-size: 18px;
+  width: 50%;
+}
+#tokensale-metrics tr:not(:last-child) td {
+  border-bottom: 1px solid #eaeaea;
+}
+
+@media screen and (min-width: 1000px) {
+  #tokensale-repartition {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all .3s;
+  }
+  #tokensale-repartition img {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all .3s;
+  }
+  #tokensale-repartition.shown {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #tokensale-repartition.shown img {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  #tokensale-funduse {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .3s;
+  }
+  #tokensale-funduse.shown {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #tokensale-metrics td {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all .3s;
+  }
+  #tokensale-metrics tr:nth-child(2) td { transition-delay: .2s; }
+  #tokensale-metrics tr:nth-child(3) td { transition-delay: .25s; }
+  #tokensale-metrics tr:nth-child(4) td { transition-delay: .3s; }
+  #tokensale-metrics tr:nth-child(5) td { transition-delay: .35s; }
+  #tokensale-metrics tr:nth-child(6) td { transition-delay: .4s; }
+  #tokensale-metrics tr:nth-child(7) td { transition-delay: .45s; }
+  #tokensale-metrics tr:nth-child(8) td { transition-delay: .5s; }
+  #tokensale-metrics tr:nth-child(9) td { transition-delay: .55s; }
+  #tokensale-metrics tr:nth-child(10) td { transition-delay: .6s; }
+  #tokensale-metrics tr:nth-child(11) td { transition-delay: .65s; }
+  #tokensale-metrics tr:nth-child(12) td { transition-delay: .7s; }
+  #tokensale-metrics tr:nth-child(13) td { transition-delay: .75s; }
+  #tokensale-metrics tr:nth-child(14) td { transition-delay: .8s; }
+  #tokensale-metrics.shown td {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 @media screen and (max-width: 1000px) {
   #tokensale {
@@ -54,12 +174,22 @@
     text-align: center;
   }
 
-  #tokensale .piechart, #tokensale .token {
+  #tokensale .text-token {
+    opacity: 1;
+    padding: 2em;
+    margin: 0;
+  }
+
+  #tokensale .token {
     opacity: 1;
     margin: 2em;
     height: 200px;
     width: 200px;
     display: inline-block;
     position: initial;
+  }
+
+  #tokensale-repartition img {
+    margin-top: 20px;
   }
 }
