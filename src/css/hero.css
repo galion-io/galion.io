@@ -162,6 +162,27 @@
   transition: opacity .5s;
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1360px) {
+  #hero .bigtext {
+    margin-left: -500px;
+    zoom: 0.9;
+  }
+  #hero #hero-phone {
+    margin-left: 175px;
+    zoom: 0.9;
+  }
+  #hero nav {
+    padding: 0 1em 0 0;
+  }
+  #hero header a {
+    font-size: 13px;
+    margin: 0.3em 0.8em;
+  }
+  #hero .brand {
+    margin-left: -30px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #hero {
     height: auto;
