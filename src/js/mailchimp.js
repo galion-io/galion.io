@@ -1,10 +1,32 @@
 (function(window) {
+  var $ = window.jQuery;
   $('form.subscribe-mailbox').each(function() {
     var $form = $(this);
 
-    $form.attr('method', 'post');
-    $form.attr('action', 'https://galion.us17.list-manage.com/subscribe/post?u=4a3268076a0e409feaadb4fb7&amp;id=ea0f267b1e');
-    $form.attr('target', '_blank');
-    $form.append($('<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4a3268076a0e409feaadb4fb7_ea0f267b1e" tabindex="-1" value=""></div>'));
+    $form.on('submit', function() {
+      $form.find('.form-error').remove();
+
+      var email = $form.find('input[type="text"]').val();
+      if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+        $form.append('<div class="form-error">Please provide a valid e-mail address.</div>');
+        return false;
+      }
+
+      $.post('https://api.galion.io/api/limited/Newsletter/Subscribe')
+        .done(_success)
+        .fail(function() {
+          $form.append('<div class="form-error">Error adding you to the whitelist, try again in a few second :-(</div>');
+        });
+      return false;
+    });
   });
+
+  function _success() {
+    $('form.subscribe-mailbox').each(function() {
+      var $form = $(this);
+
+      $form.find('input[type="text"]').attr('disabled', 'disabled');
+      $form.find('input[type="text"]').val('Successfully subscribed !');
+    });
+  }
 })(window);
