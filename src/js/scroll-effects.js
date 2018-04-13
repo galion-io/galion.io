@@ -9,6 +9,10 @@
     x = w.innerWidth || e.clientWidth || g.clientWidth,
     y = w.innerHeight || e.clientHeight || g.clientHeight;
 
+  if (x > 2000) {
+    x = 2000;
+  }
+
   if (x < 1000) {
     return;
   }

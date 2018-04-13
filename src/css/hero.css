@@ -12,6 +12,14 @@
 #hero header {
   height: 100px;
   line-height: 100px;
+  text-align: center;
+}
+
+#hero header .header-content {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 2000px;
 }
 
 #hero header.soonfixed {

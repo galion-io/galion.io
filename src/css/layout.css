@@ -5,6 +5,15 @@ html, body {
   background: #f9faff;
 	overflow-x: hidden;
 }
+html {
+	text-align: center;
+}
+body {
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+	max-width: 2000px;
+}
 
 /*html {
   background: #223265;
