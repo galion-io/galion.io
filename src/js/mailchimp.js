@@ -12,7 +12,7 @@
         return false;
       }
 
-      $.post('https://api.galion.io/api/limited/Newsletter/Subscribe')
+      $.post('https://api.galion.io/api/limited/Newsletter/Subscribe', { mail: email })
         .done(_success)
         .fail(function() {
           $form.append('<div class="form-error">Error adding you to the whitelist, try again in a few second :-(</div>');
