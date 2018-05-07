@@ -182,6 +182,11 @@
     opacity: 1;
   }
 }
+@media screen and (min-width: 1001px) and (max-width:1400px) {
+  #roadmap {
+    padding-left: 5em;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   #roadmap {

@@ -123,6 +123,12 @@
   width: 20px;
 }
 
+@media screen and (min-width: 1001px) and (max-width:1400px) {
+  #team #bigface-text {
+    padding-top: 3em;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   #team #bigface, #team #bigface-text {
     transform: translateY(30px);

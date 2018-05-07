@@ -62,6 +62,15 @@
   margin-top: 70px;
 }
 
+@media screen and (min-width: 1001px) and (max-width:1400px) {
+  #features .left nav a {
+    margin: 1em;
+  }
+  #features .right p {
+    margin-top: 0;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   #features .left {
     transform: translateX(-30px);
