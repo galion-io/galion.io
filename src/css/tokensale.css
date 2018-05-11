@@ -13,6 +13,7 @@
   position: relative;
   overflow: hidden;
   text-align: center;
+  padding-bottom: 0;
 }
 
 #tokensale h3 {
@@ -25,8 +26,8 @@
 
 #tokensale .token {
   display: inline-block;
-  height: 216px;
-  width: 216px;
+  height: 125px;
+  width: 125px;
   position: absolute;
   margin-left: 10em;
   text-align: center;
@@ -42,7 +43,7 @@
   float: left;
   width: 100%;
   opacity: 0;
-  padding: 0 0 0 250px;
+  padding: 0 0 0 160px;
   text-align: left;
   margin-left: 50px;
   transition: all .3s;

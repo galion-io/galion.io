@@ -87,7 +87,7 @@
   new ScrollMagic.Scene({
     triggerElement: '#trigger-tokensale-top',
     duration: 0.3 * y,
-    triggerHook: 0.6
+    triggerHook: 0.75
   })
     .setPin('#tokensale')
     .addTo(controller)
