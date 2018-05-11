@@ -55,7 +55,7 @@
   white-space: nowrap;
   overflow-x: auto;
   text-align: left;
-  padding: 0 15px 1em 15px;
+  padding: 0 15px;
 }
 
 #roadmap .timeline .blockgroup {
@@ -185,6 +185,26 @@
 @media screen and (min-width: 1001px) and (max-width:1400px) {
   #roadmap {
     padding-left: 5em;
+  }
+  #roadmap .lefttext {
+    padding-top: 5em;
+  }
+  #roadmap .timeline .nav {
+    zoom: 0.9;
+  }
+  #roadmap .timeline .text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  #roadmap .timeline .block {
+    padding: 1.5em;
+  }
+  #roadmap .timeline .block h3 {
+    margin-bottom: 1em;
+    line-height: 23px;
+  }
+  #roadmap .timeline .block p {
+    font-size: 15px;
   }
 }
 
