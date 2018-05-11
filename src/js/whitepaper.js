@@ -1,6 +1,6 @@
 (function(window) {
   var $ = window.jQuery;
-  var N_PAGES = 3;
+  var N_PAGES = 2;
 
   window.changeWhitepaperPage = function(el, offset) {
     var $el = $(el);
