@@ -1,22 +1,29 @@
-#advisors {
+.people-section {
   text-align: center;
+}
+
+.people-section {
   box-shadow: 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff, 0 0 100px #f9faff;
   background-image:url(img/circle.png);
   background-position: center 0;
 }
 
-#advisors h1 {
+.people-section h1 {
   padding: 2em 0;
 }
 
-#advisors .advisor {
+.people-section .item {
   display: inline-block;
   vertical-align: top;
   margin: 1em;
-  width: 350px;
+  width: 300px;
 }
 
-#advisors .advisor .image {
+.people-section > .section-text {
+  padding: 0 10em 3em;
+}
+
+.people-section .item .image {
   height: 110px;
   width: 110px;
   display: inline-block;
@@ -25,7 +32,7 @@
   background-size: 100% 100%;
 }
 
-#advisors .advisor .name {
+.people-section .item .name {
   text-transform: uppercase;
   color: #373737;
   font-weight: 500;
@@ -34,7 +41,7 @@
   padding: 20px 0 10px;
 }
 
-#advisors .advisor .job {
+.people-section .item .job {
   color: #818181;
   font-weight: 400;
   font-size: 16px;
@@ -42,7 +49,7 @@
   padding:0 .5em 1em;
 }
 
-#advisors .advisor a img {
+.people-section .item a img {
   filter: invert(100%);
   opacity: 0.5;
   display: inline-block;
@@ -51,11 +58,26 @@
   margin: .5em .5em 2em;
 }
 
+#partners {
+  background: white!important;
+  box-shadow: #fff 3px 3px 50px, #fff 3px 3px 50px, #fff 3px 3px 50px;
+}
+
+#partners.people-section .item .image {
+  width: 250px;
+  height: 150px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
 @media screen and (max-width: 1000px) {
-  #advisors .section-title {
+  .people-section .section-title {
     padding: .5em 0;
   }
-  #advisors .advisor {
+  .people-section > .section-text {
+    padding: 0 0 1em;
+  }
+  .people-section .item {
     width: 100%;
     margin: 0;
   }

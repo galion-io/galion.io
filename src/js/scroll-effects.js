@@ -153,21 +153,6 @@
       }
     });
 
-  var $team = $('#team');
-  new ScrollMagic.Scene({
-    triggerElement: '#team',
-    duration: 1 * y,
-    triggerHook: 1
-  })
-    .addTo(controller)
-    .on('progress', function(ev) {
-      if (ev.progress > 0.3) {
-        $team.addClass('shown');
-      } else {
-        $team.removeClass('shown');
-      }
-    });
-
   var $subscribeMid = $('#subscribe-mid');
   new ScrollMagic.Scene({
     triggerElement: '#subscribe-mid',
