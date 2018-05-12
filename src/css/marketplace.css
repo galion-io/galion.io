@@ -1,0 +1,12 @@
+#marketplace {
+  text-align: center;
+}
+
+#marketplace .section-text {
+  margin: 2em 0;
+}
+
+#marketplace img {
+  display: inline-block;
+  max-width: 100%;
+}
