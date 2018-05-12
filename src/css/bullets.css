@@ -1,0 +1,44 @@
+#bullets {
+  text-align: center;
+}
+
+#bullets .section-text {
+  margin: 2em 0;
+}
+
+#bullets .bullet {
+  float: left;
+  width: 33%;
+  padding: 1em 2em;
+}
+
+#bullets .bullet img {
+  display: inline-block;
+  margin: 0 110px 15px;
+  border-radius: 55px;
+  width: 110px;
+  height: 110px;
+}
+
+#bullets .bullet h3 {
+  display: inline-block;
+  width: 330px;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  height: 65px;
+}
+
+@media screen and (max-width: 1000px) {
+  #bullets .bullet {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  #bullets .bullet img {
+    margin: 0 0 15px;
+  }
+  #bullets .bullet h3 {
+    width: auto;
+  }
+}
