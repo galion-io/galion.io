@@ -10,12 +10,18 @@
 
   var sections = {
     hero: { id: 'hero', offset: -y, label: 'Page top' },
-    vision: { id: 'vision', offset: 0, label: 'Our vision' },
+    vision: { id: 'vision', offset: -30, label: 'Our vision' },
+    bullets: { id: 'bullets', offset: -120, label: 'Core features' },
+    marketplace: { id: 'marketplace', offset: -120, label: 'Marketplace' },
     features: { id: 'features', offset: -100, label: 'Our MVP' },
     roadmap: { id: 'roadmap', offset: -100, label: 'Roadmap' },
     team: { id: 'team', offset: -130, label: 'Team' },
     advisors: { id: 'advisors', offset: -100, label: 'Advisors' },
+    partners: { id: 'partners', offset: -100, label: 'Partners' },
+    tokensaleIntro: { id: 'tokensale-intro', offset: 0, label: 'Token sale' },
     tokensaleToken: { id: 'trigger-tokensale-top', offset: 100, label: 'Token Usage & Token sale' },
+    tokensaleFunduse: { id: 'tokensale-funduse', offset: 100, label: 'Fund use' },
+    tokensaleKeymetrics: { id: 'tokensale-metrics', offset: 100, label: 'Token sale key metrics' },
     france: { id: 'france', offset: -200, label: 'Compliant with regulations' },
     whitepaper: { id: 'whitepaper', offset: 20, label: 'Whitepaper' },
   };
