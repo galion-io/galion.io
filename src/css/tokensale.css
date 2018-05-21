@@ -71,21 +71,9 @@
 }
 #tokensale-repartition img {
   float: right;
-  height: 300px;
-  width: 300px;
+  height: 170px;
+  width: 170px;
   margin: 0 0 2em 2em;
-}
-
-#tokensale-funduse {
-  text-align: center;
-  padding-top: 5em;
-}
-#tokensale-funduse img {
-  height: 300px;
-  width: 300px;
-}
-#tokensale-funduse .title {
-  margin: 30px 0;
 }
 
 #tokensale-metrics {
@@ -134,16 +122,6 @@
   #tokensale-repartition.shown img {
     opacity: 1;
     transform: translateX(0);
-  }
-
-  #tokensale-funduse {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all .3s;
-  }
-  #tokensale-funduse.shown {
-    opacity: 1;
-    transform: translateY(0);
   }
 
   #tokensale-metrics td {

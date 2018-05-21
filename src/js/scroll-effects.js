@@ -228,21 +228,6 @@
       }
     });
 
-  var $tokensaleFunduse = $('#tokensale-funduse');
-  new ScrollMagic.Scene({
-    triggerElement: '#tokensale-funduse',
-    duration: 1 * y,
-    triggerHook: 1
-  })
-    .addTo(controller)
-    .on('progress', function(ev) {
-      if (ev.progress > 0.5) {
-        $tokensaleFunduse.addClass('shown');
-      } else {
-        $tokensaleFunduse.removeClass('shown');
-      }
-    });
-
   var $tokensaleMetrics = $('#tokensale-metrics');
   new ScrollMagic.Scene({
     triggerElement: '#tokensale-metrics',
