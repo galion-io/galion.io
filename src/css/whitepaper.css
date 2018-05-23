@@ -1,7 +1,7 @@
 #whitepaper {
   background: #223361;
   padding-top: 10em;
-  padding-bottom: 0;
+  padding-bottom: 250px;
   text-align: center;
 }
 
@@ -70,6 +70,7 @@
 @media screen and (max-width: 1000px) {
   #whitepaper {
     padding-top: 2em;
+    padding-bottom: 60px;
   }
   #whitepaper .image {
     width: 100%;
