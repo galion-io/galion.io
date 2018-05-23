@@ -51,7 +51,7 @@ gulp.task('usemin', function() {
 
 // minify/uglify js, html and css files
 gulp.task('uglify', ['usemin'], function() {
-  var js = gulp.src('./dist/app.js')
+  var js = gulp.src('./dist/script.js')
     .pipe(minify({
       ext: {
         src: '-debug.js',
