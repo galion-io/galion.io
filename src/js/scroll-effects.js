@@ -198,21 +198,6 @@
       }
     });
 
-  var $subscribeBottom = $('#subscribe-bottom');
-  new ScrollMagic.Scene({
-    triggerElement: '#subscribe-bottom',
-    duration: 1 * y,
-    triggerHook: 1
-  })
-    .addTo(controller)
-    .on('progress', function(ev) {
-      if (ev.progress > 0.7) {
-        $subscribeBottom.addClass('shown');
-      } else {
-        $subscribeBottom.removeClass('shown');
-      }
-    });
-
   var $tokensaleRepartition = $('#tokensale-repartition');
   new ScrollMagic.Scene({
     triggerElement: '#tokensale-repartition',
