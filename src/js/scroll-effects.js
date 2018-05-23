@@ -153,21 +153,6 @@
       }
     });
 
-  var $subscribeMid = $('#subscribe-mid');
-  new ScrollMagic.Scene({
-    triggerElement: '#subscribe-mid',
-    duration: 1 * y,
-    triggerHook: 1
-  })
-    .addTo(controller)
-    .on('progress', function(ev) {
-      if (ev.progress > 0.3) {
-        $subscribeMid.addClass('shown');
-      } else {
-        $subscribeMid.removeClass('shown');
-      }
-    });
-
   var $france = $('#france');
   new ScrollMagic.Scene({
     triggerElement: '#france',
