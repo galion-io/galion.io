@@ -41,12 +41,15 @@
   padding: 20px 0 10px;
 }
 
-.people-section .item .job {
-  color: #818181;
+.people-section .item .job, .people-section .item .description {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   padding:0 .5em 1em;
+}
+
+.people-section .item .description {
+  color: #818181;
 }
 
 .people-section .item a img {

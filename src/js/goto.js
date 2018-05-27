@@ -19,8 +19,6 @@
     advisors: { id: 'advisors', offset: -100, label: 'Advisors' },
     partners: { id: 'partners', offset: -100, label: 'Partners' },
     tokensaleIntro: { id: 'tokensale-intro', offset: 0, label: 'Token sale' },
-    tokensaleToken: { id: 'trigger-tokensale-top', offset: 100, label: 'Token Usage & Token sale' },
-    tokensaleKeymetrics: { id: 'tokensale-metrics', offset: -30, label: 'Token sale key metrics' },
     france: { id: 'france', offset: -200, label: 'Compliant with regulations' },
     whitepaper: { id: 'whitepaper', offset: 20, label: 'Whitepaper' },
   };

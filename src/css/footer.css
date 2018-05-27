@@ -1,8 +1,7 @@
 #footer {
-  background: #223361;
-  color: white;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  color: #373737;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 #footer .colored {
@@ -33,20 +32,16 @@
   text-align: left;
 }
 
-#footer td {
-  padding: 1em 2em;
-}
-
 #footer a {
   text-decoration: none;
   display: block;
-  color: #969DB7;
+  color: #818181;
   cursor: pointer;
-  margin: 1.5em 0;
+  margin: 1.3em 0;
 }
 
 #footer a:hover {
-  color: #FFF;
+  color: #373737;
 }
 
 

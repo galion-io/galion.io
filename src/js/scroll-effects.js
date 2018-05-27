@@ -85,9 +85,9 @@
   var $token = $('#tokensale .token');
   var $tokentext = $('#tokensale .text-token');
   new ScrollMagic.Scene({
-    triggerElement: '#trigger-tokensale-top',
-    duration: 0.3 * y,
-    triggerHook: 0.75
+    triggerElement: '#tokensale-intro',
+    duration: 0.1 * y,
+    triggerHook: 0.3
   })
     .setPin('#tokensale')
     .addTo(controller)
