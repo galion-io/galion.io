@@ -35,6 +35,14 @@
   padding: 5em 10em 0 6em;
 }
 
+#features img.mini {
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute;
+  opacity: 0.05;
+  right: 5000px;
+}
+
 
 #features .left nav {
   text-align: center;
