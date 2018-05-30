@@ -12,3 +12,24 @@
   max-height: 500px;
   max-width: 100%;
 }
+
+#marketplace img.mini {
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute;
+  opacity: 0.05;
+  right: 5000px;
+}
+
+#marketplace .bullet {
+  display: inline-block;
+  margin: 3em 0.5em;;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background: #ccc;
+  cursor: pointer;
+}
+#marketplace .bullet.active {
+  background: #E9649B;
+}

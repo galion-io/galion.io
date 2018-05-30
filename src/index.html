@@ -149,7 +149,15 @@
         <br>
         A smart contract will be deployed on the Ethereum blockchain to act as a trustless intermediary between the user and the service provider. The Galion Oracle, integrated to the Galion marketplace, will act as the arbiter between the parties to guarantee the delivery of funds to the seller, or the refund to the buyer should the seller fail to fulfil his engagements.
       </p>
-      <img src="img/marketplace.gif" alt="schema-marketplace" />
+      <img id="shema-marketplace" src="img/marketplace-1.png" alt="schema-marketplace" />
+      <br>
+      <span class="bullet active" onclick="toggleMarketplaceImage(this, '1')"></span>
+      <span class="bullet" onclick="toggleMarketplaceImage(this, '2')"></span>
+      <span class="bullet" onclick="toggleMarketplaceImage(this, '3')"></span>
+
+      <img class="mini" src="img/marketplace-1.png" alt="marketplace screenshot 1"/>
+      <img class="mini" src="img/marketplace-2.png" alt="marketplace screenshot 2"/>
+      <img class="mini" src="img/marketplace-3.png" alt="marketplace screenshot 3"/>
     </section>
 
     <section id="features" class="mainsection clearfix">
@@ -657,6 +665,7 @@
     <script src="js/lib/jquery.mousewheel.js"></script>
     <script src="js/lib/jquery.scrollTo.min.js"></script>
     <script src="js/mailchimp.js"></script>
+    <script src="js/marketplace.js"></script>
     <script src="js/hero-cryptoballs.js"></script>
     <script src="js/features.js"></script>
     <script src="js/goto.js"></script>
