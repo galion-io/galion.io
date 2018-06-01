@@ -231,7 +231,7 @@
 
   #hero .brand {
     float: none;
-    width: 270px;
+    width: 230px;
     display: inline-block;
   }
 
@@ -246,7 +246,16 @@
   #hero nav a {
     font-size: 1em;
     padding: 0.5em;
+    margin: 1em;
     white-space: nowrap;
+  }
+
+  #hero header .header-content {
+    text-align: center;
+  }
+
+  #hero .cta-button {
+    margin: 1em;
   }
 
 

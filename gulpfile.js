@@ -97,7 +97,8 @@ gulp.task('connect', function() {
   connect.server({
     root: 'dist',
     port: 14613,
-    livereload: false
+    livereload: false,
+    https: true
   });
 });
 
@@ -108,7 +109,7 @@ gulp.task('serve', [
 ]);
 
 gulp.task('default', ['serve'], function() {
-  console.log('Go to http://localhost:14613 to view your app !');
+  console.log('Go to https://localhost:14613 to view your app !');
 });
 
 gulp.task('deploy', ['build'], function(cb) {
