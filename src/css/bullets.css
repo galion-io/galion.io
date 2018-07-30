@@ -29,7 +29,7 @@
   height: 65px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   #bullets .bullet {
     float: none;
     width: 100%;
@@ -40,5 +40,6 @@
   }
   #bullets .bullet h3 {
     width: auto;
+    display: block;
   }
 }
