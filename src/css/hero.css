@@ -183,7 +183,7 @@
   transition: opacity .5s;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1360px) {
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
   #hero .bigtext {
     margin-left: -500px;
     zoom: 0.9;
