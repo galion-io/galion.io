@@ -102,23 +102,32 @@
   font-size: 2em;
 }
 
-#hero .telegramlink {
-  color: inherit;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
+#hero .links {
+  margin: -15px 0 20px;
+  width: 460px;
+  text-align: center;
+  max-width: 100%;
 }
-#hero .telegram {
+#hero .links a {
   display: inline-block;
-  height: 25px;
-  width: 25px;
-  vertical-align: bottom;
+  font-size: 36px;
+}
+#hero .links a img {
+  height: 1em;
+  width: 1em;
+  margin-right: 20px;
+}
+#hero .links a:last-child img {
+  margin-right: 0;
 }
 
 #hero .cta-button {
-  margin: 1em 1em 0 8em;
-  display: inline-block;
+  margin: 1em 0;
+  width: 460px;
+  max-width: 100%;
+  display: block;
   color: white;
+  text-align: center;
   font-size: 18px;
   text-decoration: none;
 }
@@ -253,11 +262,6 @@
   #hero header .header-content {
     text-align: center;
   }
-
-  #hero .cta-button {
-    margin: 1em;
-  }
-
 
   #hero .bigtext {
     position: initial;
