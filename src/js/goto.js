@@ -18,7 +18,6 @@
     team: { id: 'team', offset: -130, label: 'Team' },
     advisors: { id: 'advisors', offset: -100, label: 'Advisors' },
     partners: { id: 'partners', offset: -100, label: 'Partners' },
-    tokensaleIntro: { id: 'tokensale-intro', offset: 0, label: 'Token sale' },
     france: { id: 'france', offset: -200, label: 'Compliant with regulations' },
     whitepaper: { id: 'whitepaper', offset: 20, label: 'Whitepaper' },
   };
